@@ -1,0 +1,55 @@
+/* Custom MixItUp Styling */
+
+.mixcontrols {
+    margin-bottom: 5em;
+}
+
+.flex-grid {
+    display: flex;
+    .flex-grid-half {
+        margin: 1em;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .flex-grid {
+        display: block;
+        .flex-grid-half {
+            margin-top: 2em;
+        }
+    }
+}
+
+__________________
+/* Thumb Image Grid */
+
+.thumbgrid a {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0;
+}
+
+.thumbgrid a img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* animate thumbgrid images on hover */
+
+.thumbgrid a {
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.thumbgrid a img {
+    transition: all ease-in-out 0.2s;
+    transform: scale(1);
+    background-size: cover;
+}
+
+.thumbgrid a:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}

@@ -1,0 +1,102 @@
+// VARIABLES
+$bodyfont-family: "utopia-std",
+"Garamond",
+"Caslon",
+serif;
+$headingfont-family: "Nobel",
+"Roboto Condensed",
+sans-serif;
+$dinoheadingfont-family: "Roboto Condensed",
+sans-serif;
+$dinobodyfont-family: "Mr Eaves Mod OT",
+sans-serif;
+$conquestbodyfont-family: "Franklin Gothic URW",
+sans-serif;
+$conquestheaderfont-family: "franklin-gothic-urw-cond",
+"Roboto Condensed",
+sans-serif;
+$soothezeheaderfont-family: "poynter-oldstyle-display",
+serif;
+$soothezebodyfont-family: "museo-sans",
+sans-serif;
+$spaceheaderfont-family: "bebas-neue-pro",
+sans-serif;
+$spacebodyfont-family: "Roboto",
+sans-serif;
+$peleheader-bodyfont-family: "brandon-grotesque",
+sans-serif;
+$pelebodyfont-family: "alda",
+serif;
+$sightingsheaederfont-family: "Cormorant Garamond",
+"Lora",
+serif;
+$sightingscondensedfont-family: "Open Sans Condensed",
+"Bebas Neue",
+"Franklin Gothic Condensed",
+"Arial",
+sans-serif;
+$sightingsbodyfont-family: "Open Sans",
+sans-serif;
+$mkheaderfont-family: "adrianna",
+sans-serif;
+// VARIABLES__________________________________
+$color-teal: #005563;
+$color-red: #cc1f3d;
+$color-yellow: #fec412;
+$color-white: #fff;
+$color-black: black;
+$color-gray: #999;
+$color-gold: #efab00;
+$color-silver: #919191;
+$color-bronze: #c46200;
+$color-dino-yellow: #ffcd00;
+$color-conquest-orange: #cb7e30;
+$color-mcd-yellow: #fdbb20;
+$color-zoo-green: #a4dd83;
+$color-radiolab-green: #cde700;
+$color-sootheze: #f2dea0;
+$color-flutter: #fcb614;
+$color-andagi:#dac0ae;
+$color-light:#e2c179;
+$color-naha:#f4e1ba;
+$color-space: red;
+// #68A3D8;
+$color-pele: #FFAA00;
+$color-pele-theme: #E83E03;
+$color-astro-accent: #F6961C;
+$color-sightings: #BFC0BE;
+$color-grandma: rgba(220, 191, 147, 0.879);
+$color-access: red;
+// Breakpoints_______________________ 
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+//IMPORT PARTIALS____________________
+@import "partials/_toc";
+@import "partials/_typography";
+@import "partials/_buttons";
+@import "partials/_media";
+@import "partials/_layout";
+@import "partials/_grid_media_query";
+@import "partials/_structure";
+@import "partials/_animation";
+@import "partials/_dino_cs";
+@import "partials/_conquest_layout";
+@import "partials/_cards.scss";
+@import "partials/_about_me.scss";
+@import "partials/_mcd.scss";
+@import "partials/_zoo.scss";
+@import "partials/_radiolab.scss";
+@import "partials/_sootheze.scss";
+@import "partials/_flutter.scss";
+@import "partials/_andagi.scss";
+@import "partials/_light.scss";
+@import "partials/_naha.scss";
+@import "partials/_solarsystem.scss";
+// @import "partials/_astroday.scss";
+@import "partials/_pele.scss";
+@import "partials/_sightings.scss";
+@import "partials/_grandma.scss";
+@import "partials/_hands.scss";
+@import "partials/_mk.scss";
+@import "partials/_access.scss";

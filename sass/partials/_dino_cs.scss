@@ -1,0 +1,139 @@
+/* HERO */
+
+.dino {
+    background-color: $color-dino-yellow;
+}
+
+
+/* WIREFRAME ILLUSTRATOR AFTER EFFECTS*/
+
+.wireframe .column,
+.illustrator .column,
+.sketch .column,
+.aftereffects .column {
+    margin-right: 5%;
+}
+
+
+/* WIREFRAME */
+
+.wireframe {
+    .one-third {
+        margin-right: 0;
+    }
+}
+
+
+/* sketch */
+
+.sketches {
+    .row {
+        justify-content: space-between;
+    }
+}
+
+
+/* illustrator */
+
+.illustrator {
+    padding-bottom: 0;
+    video {
+        margin-top: 0.5em;
+    }
+}
+
+
+/* after effects */
+
+.aftereffects {
+    video {
+        margin-top: 0.5em;
+    }
+}
+
+
+/* ANIMATIONS */
+
+.animation {
+    .dino-button-main-grid {
+        display: grid;
+        margin: 2em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "saurischia_pop saurischia_pop ornith_pop ornith_pop" "saurichia_hover saurichia_hover ornith_hover ornith_hover";
+        .saurischia_pop {
+            grid-area: saurischia_pop;
+        }
+        .saurichia_hover {
+            grid-area: saurichia_hover;
+        }
+        .ornith_pop {
+            grid-area: ornith_pop;
+        }
+        .ornith_hover {
+            grid-area: ornith_hover;
+        }
+    }
+    .dino-button-sub-grid {
+        display: grid;
+        margin: 2em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "saur_pop trex_pop para_pop tri_pop steggie_pop" "saur_hover trex_hover para_hover tri_hover steggie_hover";
+        .saur_pop {
+            grid-area: saur_pop;
+        }
+        .saur_hover {
+            grid-area: saur_hover;
+        }
+        .trex_pop {
+            grid-area: trex_pop;
+        }
+        .trex_hover {
+            grid-area: trex_hover;
+        }
+        .para_pop {
+            grid-area: para_pop;
+        }
+        .para_hover {
+            grid-area: para_hover;
+        }
+        .tri_pop {
+            grid-area: tri_pop;
+        }
+        .tri_hover {
+            grid-area: tri_hover;
+        }
+        .steggie_pop {
+            grid-area: steggie_pop;
+        }
+        .steggie_hover {
+            grid-area: steggie_hover;
+        }
+    }
+    .dino_animation_grid {
+        display: grid;
+        margin: 2em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "cret_time steggie_xray trex_fact";
+        .cret_time {
+            grid-area: cret_time;
+        }
+        .steggie_xray {
+            grid-area: steggie_xray;
+        }
+        .trex_fact {
+            grid-area: trex_fact;
+        }
+    }
+}
+
+
+/* UI DESIGN */
+
+.final_ui {
+    img {
+        margin-top: 1em;
+    }
+}

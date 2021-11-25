@@ -1,0 +1,27 @@
+.grandma_hero {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: .25em;
+}
+
+@media (max-width: $breakpoint-small) {
+    .grandma_hero {
+        width: 100%;
+    }
+}
+
+.grandma {
+    background-color: $color-grandma;
+    margin-bottom: 2em;
+    hr {
+        max-width: 12em;
+        margin-left: 0;
+        border-top: 2px dashed $color-red;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+}

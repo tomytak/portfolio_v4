@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 524.9 338.4" style="enable-background:new 0 0 524.9 338.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#68A3D8;}
+	.st1{font-family:'Roboto-Regular';}
+	.st2{font-size:13.3107px;}
+	.st3{fill:#03036D;}
+	.st4{fill:#F6961C;}
+	.st5{fill:#D0383E;}
+	.st6{font-family:'Roboto-Bold';}
+	.st7{font-size:16.6384px;}
+	.st8{fill:#50544C;}
+	.st9{fill:#E2CC87;}
+	.st10{fill:#ECCC90;}
+	.st11{fill:#3EA4BF;}
+	.st12{fill:#54D303;}
+	.st13{fill:#69A3D9;}
+	.st14{fill:#D3712A;}
+	.st15{fill:#BD9573;}
+	.st16{fill:#DFB287;}
+	.st17{fill:#F2B527;}
+</style>
+<g>
+	<circle class="st0" cx="423.3" cy="33" r="30"/>
+	<text transform="matrix(1 0 0 1 395.5891 88.2318)" class="st1 st2">#68A3D8</text>
+</g>
+<g>
+	<circle class="st3" cx="99.8" cy="33" r="30"/>
+	<text transform="matrix(1 0 0 1 72.6869 88.2318)" class="st1 st2">#03036D</text>
+</g>
+<g>
+	<circle class="st4" cx="207.7" cy="33" r="30"/>
+	<text transform="matrix(1 0 0 1 180.613 88.2323)" class="st1 st2">#F6961C</text>
+</g>
+<g>
+	<circle class="st5" cx="315.5" cy="33" r="30"/>
+	<text transform="matrix(1 0 0 1 288.3126 88.2323)" class="st1 st2">#D0383E</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 115.6988 198.4352)" class="st6 st7">Mercury</text>
+	<text transform="matrix(1 0 0 1 116.4988 216.7352)" class="st1 st2">#50544C</text>
+	<circle class="st8" cx="146.7" cy="150.7" r="22.4"/>
+	<text transform="matrix(1 0 0 1 121.983 315.4456)" class="st6 st7">Saturn</text>
+	<text transform="matrix(1 0 0 1 118.9615 333.7455)" class="st1 st2">#E2CC87</text>
+	<circle class="st9" cx="146.7" cy="267.7" r="22.4"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 238.1606 198.4352)" class="st6 st7">Venus</text>
+	<text transform="matrix(1 0 0 1 233.1592 216.7352)" class="st1 st2">#ECCC90</text>
+	<circle class="st10" cx="261.5" cy="150.7" r="22.4"/>
+	<text transform="matrix(1 0 0 1 235.0692 315.4456)" class="st6 st7">Uranus</text>
+	<text transform="matrix(1 0 0 1 233.9911 333.7455)" class="st1 st2">#3EA4BF</text>
+	<circle class="st11" cx="261.5" cy="267.7" r="22.4"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 357.1159 198.4353)" class="st6 st7">Earth</text>
+	<text transform="matrix(1 0 0 1 349.8115 216.7354)" class="st1 st2">#54D303</text>
+	<circle class="st12" cx="377" cy="150.7" r="22.4"/>
+	<text transform="matrix(1 0 0 1 345.2828 315.4456)" class="st6 st7">Neptune</text>
+	<text transform="matrix(1 0 0 1 349.2068 333.7455)" class="st1 st2">#69A3D9</text>
+	<circle class="st13" cx="377" cy="267.7" r="22.4"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 472.752 198.4352)" class="st6 st7">Mars</text>
+	<text transform="matrix(1 0 0 1 464.0593 216.7352)" class="st1 st2">#D3712A</text>
+	<circle class="st14" cx="491.8" cy="150.7" r="22.4"/>
+	<text transform="matrix(1 0 0 1 472.1912 315.4456)" class="st6 st7">Pluto</text>
+	<text transform="matrix(1 0 0 1 464.2574 333.7455)" class="st1 st2">#BD9573</text>
+	<circle class="st15" cx="491.8" cy="267.7" r="22.4"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 5.8838 315.4456)" class="st6 st7">Jupiter</text>
+	<text transform="matrix(1 0 0 1 5.2838 333.7455)" class="st1 st2">#DFB287</text>
+	<circle class="st16" cx="32.8" cy="267.7" r="22.4"/>
+	<text transform="matrix(1 0 0 1 19.1111 198.0251)" class="st6 st7">Sun</text>
+	<text transform="matrix(1 0 0 1 5.9112 216.3252)" class="st1 st2">#F2B527</text>
+	<circle class="st17" cx="32.8" cy="150.7" r="22.4"/>
+</g>
+</svg>

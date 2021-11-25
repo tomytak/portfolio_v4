@@ -1,0 +1,24 @@
+.hero {
+  img {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .radiolab {
+    background-color: $color-radiolab-green;
+  }
+}
+
+// media query_________________________________
+@media (min-width: $breakpoint-small) {
+  // radiolab summary________________
+  .radiolab_summary {
+    margin-right: 3em;
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  // radiolab summary_______________
+  .radiolab_summary {
+    margin-right: 0;
+  }
+}

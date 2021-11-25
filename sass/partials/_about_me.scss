@@ -1,0 +1,36 @@
+.about-me {
+    padding-top: 0;
+    .about_intro .yellow-circle {
+        border: 5px solid $color-yellow;
+        background-color: $color-white;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 2em;
+    }
+    .row {
+        margin-top: 3em;
+        align-items: flex-start;
+        justify-content: space-between;
+        .one-third {
+            padding: 1.5em;
+        }
+    }
+    /* Medium Grid (on MEDIUM+ Screen Sizes) */
+    @media (min-width: $breakpoint-small) {
+        .about_intro {
+            width: 45vw;
+            margin: 0 auto;
+        }
+    }
+    // mobile
+    @media (max-width: $breakpoint-small) {
+        .about_intro {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 2em;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.light {
+    background-color: $color-light;
+}
+
+.illustration {
+    .light_grid {
+        margin-bottom: 2em;
+        margin-top: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "girl-sketch girl-sketch smoke_sketch smoke_sketch ghost_sketch ghost_sketch";
+        .girl_sketch {
+            grid-area: girl-sketch;
+        }
+        .smoke_sketch {
+            grid-area: smoke_sketch;
+        }
+        .ghost_sketch {
+            grid-area: ghost_sketch;
+        }
+        a img:hover {
+            text-decoration: none
+        }
+    }
+}

@@ -1,0 +1,59 @@
+// Box Sizing
+* {
+    box-sizing: border-box;
+}
+
+// html,body {height: 100%;}
+
+/* #HTML5 */
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 87.5%;
+    margin: 0;
+}
+
+.container {
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+//  swiper_________
+.swiper-container {
+    margin-bottom: 0;
+    .swiper-slide {
+        padding-left: 4em;
+        padding-right: 4em;
+        a {
+            text-decoration: none;
+            color: $color-teal;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $color-red;
+        --swiper-navigation-size: 2em;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+    }
+    .swiper-pagination {
+        --swiper-theme-color: #cc1f3d;
+        position: relative;
+        margin-top: 2em;
+    }
+}

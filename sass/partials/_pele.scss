@@ -1,0 +1,146 @@
+/* HERO */
+
+.hero {
+    .pele {
+        background-color: $color-pele;
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: $color-red;
+        }
+    }
+}
+
+// Pele Theme___________
+.pele_theme_explain {
+    margin-left: 12em;
+}
+
+// ILLUSTRATION__________
+.pele_illustration {
+    max-width: 35em;
+    margin: 0 auto;
+}
+
+// SOCIAL MEDIA__________
+#social_media {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .insta {
+        margin-top: 1em;
+        .pele-insta-grid {
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: ". phone_insta_entry phone_insta_entry phone_insta_entry . . ." ". phone_insta_entry phone_insta_entry phone_insta_entry  banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry . . .";
+            .phone_insta_entry {
+                grid-area: phone_insta_entry;
+            }
+            .banner_entry_insta {
+                grid-area: banner_entry_insta;
+            }
+        }
+        .person-insta-grid {
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: ". phone_insta_person phone_insta_person phone_insta_person . . ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person . . .";
+            .phone_insta_person {
+                grid-area: phone_insta_person;
+            }
+            .person_insta_banner {
+                grid-area: person_insta_banner;
+            }
+        }
+        @media (max-width: $breakpoint-small) {
+            .pele-insta-grid,
+            .person-insta-grid {
+                display: block;
+            }
+            .banner_entry_insta,
+            .person_insta_banner {
+                margin-top: 1em;
+            }
+        }
+    }
+    // FACEBOOK___________
+    .fb {
+        margin-top: 10em;
+        .pele-fb-grid {
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: "phone_entry_fb phone_entry_fb phone_entry_fb . . . ." "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb . . . .";
+            .phone_entry_fb {
+                grid-area: phone_entry_fb;
+            }
+            .banner_fb {
+                grid-area: banner_fb;
+            }
+        }
+        .person-fb-grid {
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: "pele_person_fb pele_person_fb pele_person_fb. . . ." "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb . . . .";
+            .pele_person_fb {
+                grid-area: pele_person_fb;
+            }
+            .person_fb_banner {
+                grid-area: person_fb_banner;
+            }
+        }
+        @media (max-width: $breakpoint-small) {
+            .pele-fb-grid,
+            .person-fb-grid {
+                display: block;
+            }
+            .banner_fb,
+            .person_fb_banner {
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+// MEDAL AND TROPHY________
+.pele_medals {
+    margin-top: 10em;
+    img {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+}
+
+// view website button_bottom______________
+.final_image_bottom {
+    .button {
+        transform: translateX(-50%);
+        margin-bottom: 4em;
+    }
+}
+
+// CREDITS_________
+.credits {
+    .row {
+        justify-content: space-between;
+        padding: 0;
+        align-items: flex-start;
+        .one-half {
+            margin: 0;
+            ul {
+                list-style-type: none;
+                margin-top: 0;
+                li {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}

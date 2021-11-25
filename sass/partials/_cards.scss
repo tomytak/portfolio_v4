@@ -1,0 +1,186 @@
+// HERO HOMEPAGE_________________________________________
+.home-hero {
+    background-image: url("img/tomy_logo_home.svg");
+    img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.quote {
+    margin-top: 10em;
+    margin-bottom: 5em;
+    .yellow-circle {
+        border: 5px solid $color-yellow;
+        background-color: $color-white;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// QUOTE ART INDEX___________________________
+.quote_art {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    .yellow-circle {
+        border: 5px solid $color-yellow;
+        background-color: $color-white;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: $breakpoint-medium) {
+    .quote_art {
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+.about_me {
+    display: grid;
+    margin-top: 0;
+    place-items: center;
+    grid-gap: 1em;
+    margin-bottom: 12em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". small-title small-title ." ". button button .";
+    grid-gap: 0;
+    .small-title {
+        border-top: 2px dashed $color-red;
+        padding-top: 2em;
+        grid-area: small-title;
+        text-align: center;
+    }
+    .button {
+        grid-area: button;
+    }
+}
+
+// index quote____________
+.quote {
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+// index work__________________
+.case-studies {
+    margin-bottom: 5em;
+}
+
+.index_card {
+    text-decoration: none;
+    padding-bottom: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease-out;
+    background-color: white;
+    overflow: hidden;
+    .award_b_corner {
+        right: 0;
+        bottom: 0;
+        width: 7em;
+        position: absolute;
+        z-index: 100;
+    }
+    .work-image {
+        padding: 0em 0 .5em 0;
+    }
+    .line_index {
+        margin-right: 5em;
+    }
+    .work_text_home {
+        h2 {
+            margin-left: 2em;
+            font-size: 1.5em;
+        }
+        .align-right-type {
+            margin-right: 1.5em;
+            .work-title,
+            h3 {
+                font-weight: 100;
+                text-align: right;
+                margin-bottom: 2em;
+                font-size: 1em;
+            }
+            .award_index {
+                font-family: $bodyfont-family;
+                font-size: 1.3em;
+                font-weight: 500;
+                color: $color-red;
+                font-style: italic;
+                z-index: 100;
+                margin-top: 0;
+                text-align: right;
+            }
+            .no-award {
+                margin-bottom: 5em;
+            }
+        }
+    }
+}
+
+// index card hover state_______ 
+.index_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    .index_card_img {
+        transform: scale(1.03);
+    }
+    .line_index,
+    .award_b_corner {
+        animation-play-state: paused;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .index_card {
+        display: block;
+        margin-top: 4em;
+    }
+}
+
+// flex-grid____________________
+.flex-grid {
+    display: flex;
+    .flex-grid-half {
+        margin: 1em;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .flex-grid {
+        display: block;
+        .flex-grid-half {
+            margin-top: 2em;
+        }
+    }
+}
+
+// index work grid______________
+.index_work_grid {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". index_andagi index_andagi .";
+    .index_andagi {
+        grid-area: index_andagi;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .index_work_grid {
+        display: block;
+        margin-top: 1em;
+        .index_andagi {
+            margin: 1em;
+        }
+    }
+}

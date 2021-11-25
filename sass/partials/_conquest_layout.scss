@@ -1,0 +1,178 @@
+.hero {
+    .conquest {
+        background-color: #e2d5bb;
+    }
+}
+
+// CONQUEST VIDEO PHOTO GRID________
+.conquest-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1em;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: " insta insta insta insta bottle_f bottle_f bottle_f" " insta insta insta insta bottle_b bottle_b bottle_b ";
+    .insta {
+        grid-area: insta;
+    }
+    .bottle_f {
+        margin-left: 1.5em;
+        grid-area: bottle_f;
+    }
+    .bottle_b {
+        grid-area: bottle_b;
+        margin-left: 1.5em;
+        margin-bottom: 5em;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .conquest-grid {
+        margin-top: 4em;
+        display: block;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: " insta insta insta insta insta insta insta" " bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f bottle_f" " bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b bottle_b";
+        .bottle_f {
+            grid-area: bottle_f;
+        }
+        .bottle_b {
+            grid-area: bottle_b;
+        }
+        .bottle_f,
+        .bottle_b {
+            margin-left: 0;
+        }
+    }
+}
+
+// BRAND STRATEGY & COPYWRITING_______________
+.brand_strategy,
+.copywriting {
+    .row {
+        align-items: flex-start;
+        justify-content: space-between;
+        ul li {
+            list-style: none;
+        }
+        .one-third {
+            ul {
+                padding-left: 0;
+            }
+        }
+        .two-thirds {
+            ul {
+                padding-left: 0;
+            }
+            .copywriting_space {
+                padding-bottom: 1.5em;
+            }
+            .no_bottom_margin {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.copywriting .brand_strategy {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// design system_____________________
+.orange {
+    color: $color-conquest-orange;
+}
+
+// ILLUSTRATIONS_____________________
+.bottle_packaging,
+.conquest_patterns {
+    .row {
+        margin-top: 0.5em;
+        justify-content: space-between;
+    }
+}
+
+.conquest_bottle_grid {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    grid-template-areas: "old_conquest_lady old_conquest_lady old_conquest_knight old_conquest_knight old_conquest_dragon old_conquest_dragon" "new_conquest_study new_conquest_study  new_conquest_shake  new_conquest_shake new_conquest_speech new_conquest_speech";
+    .old_conquest_lady {
+        grid-area: old_conquest_lady;
+    }
+    .old_conquest_knight {
+        grid-area: old_conquest_knight;
+    }
+    .old_conquest_dragon {
+        grid-area: old_conquest_dragon;
+    }
+    .new_conquest_study {
+        grid-area: new_conquest_study;
+    }
+    .new_conquest_shake {
+        grid-area: new_conquest_shake;
+    }
+    .new_conquest_speech {
+        grid-area: new_conquest_speech;
+    }
+}
+
+.illustrations_conquest_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    place-items: center;
+    grid-template-areas: ". dragon dragon beer-hand beer-hand ." "sword sword sword sword sword sword";
+    .dragon {
+        grid-area: dragon;
+    }
+    .beer-hand {
+        grid-area: beer-hand;
+    }
+    .sword {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        grid-area: sword;
+    }
+}
+
+.conquest_patterns,
+.logo_exploration {
+    margin-bottom: 2em;
+}
+
+@media (max-width: $breakpoint-small) {
+    .bottle_packaging {
+        img {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+    .illustrations_conquest {
+        display: block;
+    }
+}
+
+// style guide________________
+.style_guide {
+    background-color: #e2d5bb;
+    .row {
+        padding-left: 3em;
+        justify-content: space-between;
+        padding-right: 3em;
+        .column {
+            padding: 1em;
+        }
+    }
+}
+
+// final packaging_________
+.final_packaging {
+    .row {
+        justify-content: space-between;
+    }
+}

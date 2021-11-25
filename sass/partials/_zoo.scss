@@ -1,0 +1,56 @@
+.zoo {
+    background-color: $color-zoo-green;
+}
+
+#final_product {
+    .row {
+        justify-content: space-between;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        .one-third {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding-right: 3em;
+        }
+        .two-thirds {
+            margin-left: 3em;
+        }
+    }
+}
+
+// Media query__________________________________
+@media (min-width: $breakpoint-large) {
+    // zoo color study_design system_________
+    .color_study_zoo {
+        padding-left: 2.5em;
+    }
+    // zoo final designs_________________
+    .final_zoo_explain {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 30vw;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    // zoo color study_design system_________
+    .color_study_zoo {
+        margin-top: 1em;
+    }
+    // ZOO SKETCHES____________
+    .sketches,
+    .book_first_draft {
+        padding-bottom: 0;
+        .sketch_explain {
+            padding-left: 0;
+        }
+        .logo_exploration {
+            margin-top: 2em;
+            img {
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}

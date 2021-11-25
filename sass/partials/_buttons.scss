@@ -1,0 +1,36 @@
+/* #BUTTONS */
+
+button,
+.button {
+    font-size: inherit;
+    line-height: 1;
+    font-size: inherit;
+    color: $color-teal;
+    display: inline-block;
+    padding: 1.5em;
+    border: 1px solid $color-teal;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $headingfont-family;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+}
+
+button:hover,
+.button:hover {
+    background-color: $color-teal;
+    color: $color-white;
+}
+
+button.alt,
+.button.alt {
+    color: $color-teal;
+}
+
+button.alt:hover,
+.button.alt:hover {
+    background-color: $color-teal;
+    color: $color-white;
+    border-color: $color-teal;
+}

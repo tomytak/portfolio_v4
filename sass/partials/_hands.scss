@@ -1,0 +1,83 @@
+.hands {
+    background-color: $color-grandma;
+    margin-bottom: 2em;
+    hr {
+        max-width: 12em;
+        margin-left: 0;
+        border-top: 2px dashed $color-red;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.hands_img {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    .art_caption {
+        p {
+            font-size: 1em;
+            line-height: .5em;
+        }
+    }
+}
+
+.hands_img {
+    .whats_left_grid {
+        margin-bottom: 2em;
+        margin-top: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "whats_left1 whats_left1 whats_left2 whats_left2 whats_left2";
+        .whats_left1 {
+            grid-area: whats_left1;
+        }
+        .whats_left2 {
+            grid-area: whats_left2;
+        }
+    }
+    @media(max-width:$breakpoint-small) {
+        .whats_left_grid {
+            display: block;
+            .whats_left1,
+            .whats_left2 {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+.hands_concept {
+    .hands_grid {
+        margin-bottom: 2em;
+        margin-top: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "sanshin_paint sanshin_paint sanshin_paint multiple_hands multiple_hands multiple_hands" "sanshin_portrait sanshin_portrait sanshin_portrait multiple_hands multiple_hands multiple_hands";
+        .sanshin_paint {
+            grid-area: sanshin_paint;
+            align-self: flex-end;
+        }
+        .sanshin_portrait {
+            grid-area: sanshin_portrait;
+        }
+        .multiple_hands {
+            grid-area: multiple_hands;
+        }
+    }
+    @media(max-width:$breakpoint-small) {
+        .hands_grid {
+            display: block;
+            .sanshin_paint,
+            .sanshin_portrait,
+            .multiple_hands {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
