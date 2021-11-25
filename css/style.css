@@ -2700,7 +2700,7 @@ fade-in {
       -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
       grid-template-columns: repeat(7, 1fr);
       -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ." ". sun_gif sun_gif sun_gif insta_info insta_info ." ". sun_gif sun_gif sun_gif . . ."; }
+      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ."  ". sun_gif sun_gif sun_gif insta_info insta_info ."  ". sun_gif sun_gif sun_gif . . ."; }
       #social_media .insta .sun-insta-grid .sun_gif {
         -ms-grid-row: 1;
         -ms-grid-row-span: 7;
@@ -3036,8 +3036,6 @@ fade-in {
   background-color: #68A3D8; }
 
 .astro-works-grid {
-  display: -ms-grid;
-  display: grid;
   margin-top: 4em;
   grid-gap: 1em;
   -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
@@ -3047,8 +3045,14 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
     grid-area: astro_insta; }
   .astro-works-grid .astro_fb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
@@ -3076,8 +3080,16 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
     grid-area: sticker_mockup; }
   .astro_sticker_grid .astro_sticker {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -3100,8 +3112,16 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
     grid-area: poster_mockup; }
   .astro_poster_grid .astro_poster {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -3124,8 +3144,16 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
     grid-area: banner_mockup; }
   .astro_banner_grid .astro_banner {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -3165,13 +3193,23 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 3;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
         grid-area: astro_insta_gif; }
       #social_media .insta .astro-insta-grid .astro_insta1 {
         -ms-grid-row: 3;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         grid-area: astro_insta1; }
       #social_media .insta .astro-insta-grid .astro_insta2 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
         -ms-grid-row: 5;
         -ms-grid-column: 9;
         -ms-grid-column-span: 3;
@@ -3200,8 +3238,16 @@ fade-in {
         -ms-grid-row-span: 7;
         -ms-grid-column: 1;
         -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
         grid-area: astro_mobile_fb; }
       #social_media .fb .astro-fb-grid .astro_banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 7;
@@ -4174,3 +4220,234 @@ fade-in {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+/* HERO */
+.hero .access {
+  background-color: #4D9ED7; }
+
+.astro-works-grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . ."; }
+  .astro-works-grid .astro_insta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: astro_insta; }
+  .astro-works-grid .astro_fb {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+    grid-area: astro_fb; }
+
+@media (max-width: 768px) {
+  .astro-works-grid {
+    display: block; }
+    .astro-works-grid .astro_insta {
+      margin-bottom: 1em; } }
+
+.astro_sticker_grid {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2em;
+  margin: 0 auto;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-areas: "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ." "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ."; }
+  .astro_sticker_grid .sticker_mockup {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-area: sticker_mockup; }
+  .astro_sticker_grid .astro_sticker {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    grid-area: astro_sticker; }
+
+.astro_poster_grid {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2em;
+  margin: 0 auto;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-areas: "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ." "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ."; }
+  .astro_poster_grid .poster_mockup {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-area: poster_mockup; }
+  .astro_poster_grid .astro_poster {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    grid-area: astro_poster; }
+
+.astro_banner_grid {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2em;
+  margin: 0 auto;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-areas: "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ." "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ."; }
+  .astro_banner_grid .banner_mockup {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-area: banner_mockup; }
+  .astro_banner_grid .astro_banner {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    grid-area: astro_banner; }
+
+@media (max-width: 768px) {
+  .astro_sticker_grid,
+  .astro_poster_grid,
+  .astro_banner_grid {
+    display: block; }
+  .sticker_mockup,
+  .astro_sticker,
+  .poster_mockup,
+  .astro_poster,
+  .banner_mockup,
+  .astro_banner {
+    margin-bottom: 1em; } }
+
+#social_media {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #social_media .insta {
+    margin-top: 1em; }
+    #social_media .insta .astro-insta-grid {
+      max-width: 80%;
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: ". astro_insta_gif astro_insta_gif astro_insta_gif . . ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta1 astro_insta1 ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta2 astro_insta2 ." ". astro_insta_gif astro_insta_gif astro_insta_gif . . ."; }
+      #social_media .insta .astro-insta-grid .astro_insta_gif {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 5;
+        grid-area: astro_insta_gif; }
+      #social_media .insta .astro-insta-grid .astro_insta1 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 3;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: astro_insta1; }
+      #social_media .insta .astro-insta-grid .astro_insta2 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 5;
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 3;
+        grid-area: astro_insta2; }
+    @media (max-width: 768px) {
+      #social_media .insta .astro-insta-grid {
+        display: block; }
+      #social_media .insta .astro_insta_gif,
+      #social_media .insta .astro_insta1,
+      #social_media .insta .astro_insta2 {
+        margin-bottom: 1em; } }
+  #social_media .fb {
+    margin-top: 10em; }
+    #social_media .fb .astro-fb-grid {
+      max-width: 80%;
+      display: -ms-grid;
+      display: grid;
+      margin: 2em;
+      grid-gap: 2em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(7, 1fr);
+      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+      grid-template-areas: "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ." "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ."; }
+      #social_media .fb .astro-fb-grid .astro_mobile_fb {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 7;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-area: astro_mobile_fb; }
+      #social_media .fb .astro-fb-grid .astro_banner_fb {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 7;
+        grid-area: astro_banner_fb; }
+    @media (max-width: 768px) {
+      #social_media .fb .astro-fb-grid {
+        display: block; }
+      #social_media .fb .astro_mobile_fb,
+      #social_media .fb .astro_banner_fb {
+        margin-top: 1.5em; } }
