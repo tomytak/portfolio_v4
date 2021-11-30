@@ -660,7 +660,6 @@ a img:hover {
 .prototype a,
 #artwork a,
 .pele_medals a,
-.astro-works-grid a,
 .sightings-bg-grid a,
 .index_card_img a,
 .post_insta_sightings a,
@@ -859,6 +858,8 @@ body {
     width: 64.6666%; }
   .three-fourths {
     width: 73%; }
+  .three-fifths {
+    width: 58%; }
   .page-nav .yellow-circle {
     height: 1.5em;
     width: 1.5em; }
@@ -1272,7 +1273,8 @@ section {
 .planets_desktop,
 .solar_animation_desktop,
 .conquest_patterns_desktop,
-.light_desktop {
+.light_desktop,
+.access_art_desktop {
   visibility: visible;
   display: none; }
 
@@ -1291,7 +1293,8 @@ section {
 .sightings_mobile,
 .mk_logov1_mobile,
 .mk_logov2_mobile,
-.mk_logo_color_mobile {
+.mk_logo_color_mobile,
+.access_art_mobile {
   display: none; }
 
 .dino_ani_desktop {
@@ -1313,7 +1316,8 @@ section {
   .sighitngs_desktop,
   .mk_logov1_desktop,
   .mk_logov2_desktop,
-  .mk_logo_color_desktop {
+  .mk_logo_color_desktop,
+  .access_art_desktop {
     visibility: hidden;
     position: absolute; }
   .sky_mobile,
@@ -1330,7 +1334,8 @@ section {
   .sightings_mobile,
   .mk_logov1_mobile,
   .mk_logov2_mobile,
-  .mk_logo_color_mobile {
+  .mk_logo_color_mobile,
+  .access_art_mobile {
     margin-top: 2em;
     margin-bottom: 2em;
     visibility: visible;
@@ -1349,7 +1354,8 @@ section {
     .sightings_mobile .swiper-slide .container_swiper,
     .mk_logov1_mobile .swiper-slide .container_swiper,
     .mk_logov2_mobile .swiper-slide .container_swiper,
-    .mk_logo_color_mobile .swiper-slide .container_swiper {
+    .mk_logo_color_mobile .swiper-slide .container_swiper,
+    .access_art_mobile .swiper-slide .container_swiper {
       -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
@@ -1370,7 +1376,8 @@ section {
     .sightings_mobile .swiper-slide a img,
     .mk_logov1_mobile .swiper-slide a img,
     .mk_logov2_mobile .swiper-slide a img,
-    .mk_logo_color_mobile .swiper-slide a img {
+    .mk_logo_color_mobile .swiper-slide a img,
+    .access_art_mobile .swiper-slide a img {
       width: 80%;
       margin: 0 auto;
       margin-top: 2em;
@@ -1389,7 +1396,8 @@ section {
     .sightings_mobile .swiper-slide .conquest_sword,
     .mk_logov1_mobile .swiper-slide .conquest_sword,
     .mk_logov2_mobile .swiper-slide .conquest_sword,
-    .mk_logo_color_mobile .swiper-slide .conquest_sword {
+    .mk_logo_color_mobile .swiper-slide .conquest_sword,
+    .access_art_mobile .swiper-slide .conquest_sword {
       margin-bottom: 0; }
   .dino_ani_mobile {
     visibility: visible;
@@ -1397,6 +1405,45 @@ section {
 
 .final_product {
   margin-top: 0; }
+
+#print {
+  margin-bottom: 10em; }
+
+.print_grid {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2em;
+  margin: 0 auto;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
+  grid-template-areas: "print_mockup print_mockup print_mockup print_mockup print_mockup . ." "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup . ."; }
+  .print_grid .print_mockup {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-area: print_mockup; }
+  .print_grid .print_image {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 3;
+    grid-area: print_image;
+    -ms-grid-row-align: center;
+    align-self: center; }
+
+.print_stacked_image {
+  padding-bottom: 1em; }
+
+@media (max-width: 768px) {
+  .print_grid {
+    display: block; }
+  .print_mockup,
+  .print_image {
+    margin-bottom: 1em; } }
 
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
 .text-centered {
@@ -1407,7 +1454,7 @@ section {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 3em;
   margin-bottom: 2em; }
   .text-centered .arrow {
     padding: 0.2em;
@@ -1884,16 +1931,6 @@ fade-in {
     -ms-grid-column: 1;
     -ms-grid-column-span: 13; } }
 
-@media (max-width: 768px) {
-  .conquest-grid .bottle_f {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 13; }
-  .conquest-grid .bottle_b {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 13; } }
-
 .brand_strategy .row,
 .copywriting .row {
   -webkit-box-align: start;
@@ -2361,11 +2398,6 @@ fade-in {
 .prototype .two-thirds {
   margin-left: 0;
   margin-right: 1em; }
-
-.packaging .row {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
 
 .brochure_layout img {
   margin: 1%; }
@@ -3045,14 +3077,8 @@ fade-in {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
     grid-area: astro_insta; }
   .astro-works-grid .astro_fb {
-    -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-column: 9;
     -ms-grid-column-span: 3;
@@ -3080,16 +3106,8 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
     grid-area: sticker_mockup; }
   .astro_sticker_grid .astro_sticker {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -3112,16 +3130,8 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
     grid-area: poster_mockup; }
   .astro_poster_grid .astro_poster {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -3144,16 +3154,8 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
     grid-area: banner_mockup; }
   .astro_banner_grid .astro_banner {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 11;
@@ -4225,30 +4227,55 @@ fade-in {
 .hero .access {
   background-color: #4D9ED7; }
 
-.astro-works-grid {
+.access-works-grid {
   display: -ms-grid;
   display: grid;
   margin-top: 4em;
   grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . ."; }
-  .astro-works-grid .astro_insta {
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(9, 1fr);
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: ". insta postcards postcards postcards banner banner banner ." ". facebook survey survey survey banner banner banner ."; }
+  .access-works-grid .insta {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: insta; }
+  .access-works-grid .facebook {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: facebook; }
+  .access-works-grid .postcards {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 1;
+    -ms-grid-column-span: 5;
+    grid-area: postcards; }
+  .access-works-grid .survey {
+    -ms-grid-row: 3;
     -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: astro_insta; }
-  .astro-works-grid .astro_fb {
+    -ms-grid-column-span: 5;
+    grid-area: survey; }
+  .access-works-grid .banner {
     -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 5;
+    grid-area: banner; }
+  @media (max-width: 768px) {
+  .conquest-grid .bottle_f {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; }
+  .conquest-grid .bottle_b {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; }
+  .access-works-grid .insta {
     -ms-grid-row: 1;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: astro_fb; }
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 13; } }
 
 @media (max-width: 768px) {
   .astro-works-grid {
@@ -4256,114 +4283,75 @@ fade-in {
     .astro-works-grid .astro_insta {
       margin-bottom: 1em; } }
 
-.astro_sticker_grid {
-  width: 90%;
+.access_logo_grid {
   display: -ms-grid;
   display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
   grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ." "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ."; }
-  .astro_sticker_grid .sticker_mockup {
+  -ms-grid-columns: 1fr 1em 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: "blue_logo blue_logo" "white_logo black_logo "; }
+  .access_logo_grid .blue_logo {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
+    -ms-grid-column-span: 3;
+    grid-area: blue_logo; }
+  .access_logo_grid .white_logo {
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: sticker_mockup; }
-  .astro_sticker_grid .astro_sticker {
+    grid-area: white_logo; }
+  .access_logo_grid .black_logo {
     -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_sticker; }
-
-.astro_poster_grid {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ." "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ."; }
-  .astro_poster_grid .poster_mockup {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: poster_mockup; }
-  .astro_poster_grid .astro_poster {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_poster; }
-
-.astro_banner_grid {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ." "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ."; }
-  .astro_banner_grid .banner_mockup {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: banner_mockup; }
-  .astro_banner_grid .astro_banner {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_banner; }
+    -ms-grid-column: 3;
+    grid-area: black_logo; }
 
 @media (max-width: 768px) {
-  .astro_sticker_grid,
-  .astro_poster_grid,
-  .astro_banner_grid {
+  .access_logo_grid {
     display: block; }
-  .sticker_mockup,
-  .astro_sticker,
-  .poster_mockup,
-  .astro_poster,
-  .banner_mockup,
-  .astro_banner {
-    margin-bottom: 1em; } }
+    .access_logo_grid .blue_logo,
+    .access_logo_grid .white_logo,
+    .access_logo_grid .black_logo {
+      margin-bottom: 1em; } }
+
+.access_illust_grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4em;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto 1em auto;
+  grid-template-areas: "blue_rings rings teal_rings" "access_icon access_icon access_icon"; }
+  .access_illust_grid .blue_rings {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: blue_rings; }
+  .access_illust_grid .rings {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: rings; }
+  .access_illust_grid .teal_rings {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: teal_rings; }
+  .access_illust_grid .access_icon {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: access_icon; }
+
+.access_art_mobile img {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.original_logo {
+  padding-bottom: 7em; }
+  .original_logo .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .original_logo .row .two-thirds {
+      padding-right: 5em; }
 
 #social_media {
   margin-top: 2em;

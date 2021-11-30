@@ -1,370 +1,361 @@
-/* LAYOUT */
-
-
-/*
+            /* LAYOUT */
+            /*
 #MEDIA QUERIES (Mobile First)
 	#DEFAULT/SMALL+ (Mobile First - Default Settings Outside of Media Queries)
 	#MEDIUM+ (Tablet) - min-width: 768px
   #LARGE+ (Desktop) - min-width: 1150px
   
 /* SMALL+ (Mobile First Defaults) */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-@media (min-width: $breakpoint-medium) {
-    .container {
-        max-width: $breakpoint-medium;
-        // conquest illustrations and brand summary for sootheze_____________
-        .illustration_explain,
-        .summary {
-            margin: 0 auto;
-            width: 50vw;
-        }
-    }
-}
-
-@media (min-width: $breakpoint-large) {
-    body {
-        font-size: 112.5%;
-    }
-    .container {
-        max-width: $breakpoint-large;
-        // conquest illustrations and brand summary for sootheze_____________
-        .illustration_explain,
-        .summary {
-            margin: 0 auto;
-            width: 35vw;
-        }
-    }
-    // SKETCHES____________
-    .sketches,
-    .book_first_draft {
-        padding-bottom: 0;
-        .sketch_explain {
-            padding-left: 4em;
-        }
-    }
-}
-
-
-/* #LARGE+ MEDIA QUERY */
-
-@media (min-width: $breakpoint-large) {
-    /* LARGE BODY TYPE */
-    body {
-        font-size: 100%;
-        /* 16px; */
-    }
-}
-
-
-/* Grid */
-
-
-/* Default Grid (on SMALL+ Screen Sizes) */
-
-.row {
-    margin: 0;
-}
-
-
-/* Medium Grid (on MEDIUM+ Screen Sizes) */
-
-@media (min-width: $breakpoint-small) {
-    .page-nav {
-        visibility: visible;
-    }
-    body {
-        font-size: 100%;
-    }
-    .row {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .row.swap {
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    }
-    .center {
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .column {
-        -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        margin: 1%;
-    }
-    .one-whole {
-        width: 100%;
-    }
-    .one-half {
-        width: 48%;
-    }
-    .one-third {
-        width: 31.3333%;
-    }
-    .one-fourth {
-        width: 23%;
-    }
-    .one-fifth {
-        width: 18%;
-    }
-    .one-sixth {
-        width: -1.3334%;
-    }
-    .one-seventh {
-        width: 12%;
-    }
-    .one-eighth {
-        width: 10.5%;
-    }
-    .one-nineth {
-        width: 9%;
-    }
-    .one-tenth {
-        width: 8%;
-    }
-    .one-eleventh {
-        width: -1.91%;
-    }
-    .one-twelveth {
-        width: -1.92%;
-    }
-    .two-fifths {
-        width: 38%;
-    }
-    .two-thirds {
-        width: 64.6666%;
-    }
-    .three-fourths {
-        width: 73%;
-    }
-    // page nav___________________
-    .page-nav {
-        .yellow-circle {
-            height: 1.5em;
-            width: 1.5em;
-        }
-    }
-    /* HERO ___________________________*/
-    .hero {
-        .proj_summary {
-            margin-top: 2em;
-            padding-top: 1em;
-            padding-left: 6em;
-            padding-right: 6em;
-            padding-bottom: 3em;
-        }
-    }
-    // design system_____________
-    .type_specimen {
-        .type_scale {
-            margin-right: 2em;
-        }
-        .color_study {
-            margin-left: 2em;
-            img {
-                margin-top: 1.3em;
-            }
-        }
-    }
-    // conquest illustrations and brand summary for sootheze_____________
-    .illustration_explain,
-    .summary {
-        margin: 0 auto;
-        width: 50vw;
-    }
-    // SKETCHES____________
-    .sketches,
-    .book_first_draft {
-        padding-bottom: 0;
-        .sketch_explain {
-            margin-left: 2em;
-        }
-    }
-}
-
-@media (max-width: $breakpoint-small) {
-    .container {
-        width: 92%;
-    }
-    .column.small:last-child {
-        margin-right: 0;
-    }
-    // hero proj. summary__________
-    .hero {
-        margin-bottom: 0;
-        .proj_summary {
-            margin-top: 0;
-            padding-top: 1em;
-            padding-left: 2em;
-            padding-right: 2em;
-            padding-bottom: 2em;
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.7em;
-                line-height: 1.3em;
-            }
-        }
-    }
-    #styletiles .sectionhead,
-    h1 {
-        font-size: 2em;
-    }
-    // objective__________
-    .objective {
-        .row {
-            margin-top: 1em;
-            .one-third {
-                margin-top: 2em;
-            }
-            ul {
-                margin-bottom: 1em;
-            }
-        }
-    }
-    // page nav___________________
-    .page-nav {
-        .yellow-circle {
-            height: 1em;
-            width: 1em;
-        }
-    }
-    // design system_____________
-    .type_specimen {
-        .type_scale {
-            margin-right: 0;
-        }
-        .color_study {
-            margin-top: 2em;
-            margin-left: 0;
-            img {
-                margin-top: 1.5em;
-            }
-        }
-    }
-    // brand strategy & copywriting____________
-    .brand_strategy,
-    .copywriting {
-        .row {
-            .one-third {
-                h2 {
-                    font-size: 1.5em;
-                }
-            }
-            .two-thirds {
+            
+            body {
+                margin: 0;
                 padding: 0;
-                margin-top: 2em;
-                h3 {
-                    font-size: 1.3em;
+            }
+            
+            .container {
+                width: 90%;
+                margin: 0 auto;
+            }
+            
+            @media (min-width: $breakpoint-medium) {
+                .container {
+                    max-width: $breakpoint-medium;
+                    // conquest illustrations and brand summary for sootheze_____________
+                    .illustration_explain,
+                    .summary {
+                        margin: 0 auto;
+                        width: 50vw;
+                    }
                 }
-                p {
+            }
+            
+            @media (min-width: $breakpoint-large) {
+                body {
+                    font-size: 112.5%;
+                }
+                .container {
+                    max-width: $breakpoint-large;
+                    // conquest illustrations and brand summary for sootheze_____________
+                    .illustration_explain,
+                    .summary {
+                        margin: 0 auto;
+                        width: 35vw;
+                    }
+                }
+                // SKETCHES____________
+                .sketches,
+                .book_first_draft {
+                    padding-bottom: 0;
+                    .sketch_explain {
+                        padding-left: 4em;
+                    }
+                }
+            }
+            /* #LARGE+ MEDIA QUERY */
+            
+            @media (min-width: $breakpoint-large) {
+                /* LARGE BODY TYPE */
+                body {
+                    font-size: 100%;
+                    /* 16px; */
+                }
+            }
+            /* Grid */
+            /* Default Grid (on SMALL+ Screen Sizes) */
+            
+            .row {
+                margin: 0;
+            }
+            /* Medium Grid (on MEDIUM+ Screen Sizes) */
+            
+            @media (min-width: $breakpoint-small) {
+                .page-nav {
+                    visibility: visible;
+                }
+                body {
+                    font-size: 100%;
+                }
+                .row {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+                .row.swap {
+                    -webkit-flex-direction: row-reverse;
+                    -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+                }
+                .center {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+                .column {
+                    -webkit-flex-grow: 1;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    margin: 1%;
+                }
+                .one-whole {
+                    width: 100%;
+                }
+                .one-half {
+                    width: 48%;
+                }
+                .one-third {
+                    width: 31.3333%;
+                }
+                .one-fourth {
+                    width: 23%;
+                }
+                .one-fifth {
+                    width: 18%;
+                }
+                .one-sixth {
+                    width: -1.3334%;
+                }
+                .one-seventh {
+                    width: 12%;
+                }
+                .one-eighth {
+                    width: 10.5%;
+                }
+                .one-nineth {
+                    width: 9%;
+                }
+                .one-tenth {
+                    width: 8%;
+                }
+                .one-eleventh {
+                    width: -1.91%;
+                }
+                .one-twelveth {
+                    width: -1.92%;
+                }
+                .two-fifths {
+                    width: 38%;
+                }
+                .two-thirds {
+                    width: 64.6666%;
+                }
+                .three-fourths {
+                    width: 73%;
+                }
+                .three-fifths {
+                    width: 58%;
+                }
+                // page nav___________________
+                .page-nav {
+                    .yellow-circle {
+                        height: 1.5em;
+                        width: 1.5em;
+                    }
+                }
+                /* HERO ___________________________*/
+                .hero {
+                    .proj_summary {
+                        margin-top: 2em;
+                        padding-top: 1em;
+                        padding-left: 6em;
+                        padding-right: 6em;
+                        padding-bottom: 3em;
+                    }
+                }
+                // design system_____________
+                .type_specimen {
+                    .type_scale {
+                        margin-right: 2em;
+                    }
+                    .color_study {
+                        margin-left: 2em;
+                        img {
+                            margin-top: 1.3em;
+                        }
+                    }
+                }
+                // conquest illustrations and brand summary for sootheze_____________
+                .illustration_explain,
+                .summary {
+                    margin: 0 auto;
+                    width: 50vw;
+                }
+                // SKETCHES____________
+                .sketches,
+                .book_first_draft {
+                    padding-bottom: 0;
+                    .sketch_explain {
+                        margin-left: 2em;
+                    }
+                }
+            }
+            
+            @media (max-width: $breakpoint-small) {
+                .container {
+                    width: 92%;
+                }
+                .column.small:last-child {
+                    margin-right: 0;
+                }
+                // hero proj. summary__________
+                .hero {
                     margin-bottom: 0;
+                    .proj_summary {
+                        margin-top: 0;
+                        padding-top: 1em;
+                        padding-left: 2em;
+                        padding-right: 2em;
+                        padding-bottom: 2em;
+                        h1 {
+                            font-size: 2em;
+                        }
+                        h2 {
+                            font-size: 1.7em;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+                #styletiles .sectionhead,
+                h1 {
+                    font-size: 2em;
+                }
+                // objective__________
+                .objective {
+                    .row {
+                        margin-top: 1em;
+                        .one-third {
+                            margin-top: 2em;
+                        }
+                        ul {
+                            margin-bottom: 1em;
+                        }
+                    }
+                }
+                // page nav___________________
+                .page-nav {
+                    .yellow-circle {
+                        height: 1em;
+                        width: 1em;
+                    }
+                }
+                // design system_____________
+                .type_specimen {
+                    .type_scale {
+                        margin-right: 0;
+                    }
+                    .color_study {
+                        margin-top: 2em;
+                        margin-left: 0;
+                        img {
+                            margin-top: 1.5em;
+                        }
+                    }
+                }
+                // brand strategy & copywriting____________
+                .brand_strategy,
+                .copywriting {
+                    .row {
+                        .one-third {
+                            h2 {
+                                font-size: 1.5em;
+                            }
+                        }
+                        .two-thirds {
+                            padding: 0;
+                            margin-top: 2em;
+                            h3 {
+                                font-size: 1.3em;
+                            }
+                            p {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                // conquest illustrations and brand summary for sootheze_____________
+                .illustration_explain,
+                .summary {
+                    margin: 0 auto;
+                    width: 100%;
+                }
+                // logo
+                .logo {
+                    .row {
+                        .final_logo {
+                            padding-right: 0;
+                        }
+                    }
+                }
+                //  swiper_________
+                .swiper-container {
+                    .swiper-slide {
+                        padding-left: 1.5em;
+                        padding-right: 1.5em;
+                    }
+                    .swiper-button-prev,
+                    .swiper-button-next {
+                        color: $color-red;
+                        --swiper-navigation-size: 1.5em;
+                        width: 0;
+                    }
+                    .swiper-pagination {
+                        --swiper-theme-color: #cc1f3d;
+                        position: relative;
+                        margin-top: 1em;
+                    }
+                }
+                #styletiles,
+                section#brand_identity,
+                .illustrations,
+                section#sketches,
+                #logo,
+                #storyboard,
+                #artwork,
+                section#hi-fi,
+                #first_draft,
+                section#final,
+                section#web,
+                section#artwork,
+                section#motion_graphic,
+                #style_guide,
+                #final_product,
+                #brand_identity,
+                #hi-fi,
+                #copywriting,
+                #work_gallery,
+                .illustrator,
+                .illustrations,
+                #print,
+                #sketches,
+                .conquest-grid,
+                .grid {
+                    padding-top: 2em;
+                }
+                .logo,
+                .logo_exploration {
+                    margin-top: 0;
+                    padding: 0;
+                }
+                section {
+                    padding: 0 0;
                 }
             }
-        }
-    }
-    // conquest illustrations and brand summary for sootheze_____________
-    .illustration_explain,
-    .summary {
-        margin: 0 auto;
-        width: 100%;
-    }
-    // logo
-    .logo {
-        .row {
-            .final_logo {
-                padding-right: 0;
+            /* #CLEARFIXES_______________ */
+            
+            .row2:after,
+            .group:after,
+            .row:after,
+            .container:after,
+            .nav:after {
+                content: "";
+                display: table;
+                clear: both;
+                font-size: 0;
             }
-        }
-    }
-    //  swiper_________
-    .swiper-container {
-        .swiper-slide {
-            padding-left: 1.5em;
-            padding-right: 1.5em;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: $color-red;
-            --swiper-navigation-size: 1.5em;
-            width: 0;
-        }
-        .swiper-pagination {
-            --swiper-theme-color: #cc1f3d;
-            position: relative;
-            margin-top: 1em;
-        }
-    }
-    #styletiles,
-    section#brand_identity,
-    .illustrations,
-    section#sketches,
-    #logo,
-    #storyboard,
-    #artwork,
-    section#hi-fi,
-    #first_draft,
-    section#final,
-    section#web,
-    section#artwork,
-    section#motion_graphic,
-    #style_guide,
-    #final_product,
-    #brand_identity,
-    #hi-fi,
-    #copywriting,
-    #work_gallery,
-    .illustrator,
-    .illustrations,
-    #print,
-    #sketches,
-    .conquest-grid,
-    .grid {
-        padding-top: 2em;
-    }
-    .logo,
-    .logo_exploration {
-        margin-top: 0;
-        padding: 0;
-    }
-    section {
-        padding: 0 0;
-    }
-}
-
-
-/* #CLEARFIXES_______________ */
-
-.row2:after,
-.group:after,
-.row:after,
-.container:after,
-.nav:after {
-    content: "";
-    display: table;
-    clear: both;
-    font-size: 0;
-}

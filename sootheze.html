@@ -372,26 +372,31 @@
             <div id="print" class="revealer">
                 <p class="teal_subhead">Printed Products</p>
 
-                <section class="packaging">
-                    <sp class="small-title">packaging</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
 
-                        <a href="img/sootheze/packaging_layout.png" data-fancybox="gallery"><img src="img/sootheze/packaging_layout.png" alt="packaging layout"></a>
-                        <span class="caption">Packaging layout</span>
-                </section>
+                        <div class="swiper-slide">
+                            <a href="img/sootheze/packaging_layout.png" data-fancybox="gallery"><img src="img/sootheze/packaging_layout.png" alt="packaging layout"></a>
+                            <span class="caption">Packaging 
+                        </div>
 
-                <section class="brochure">
-                    <p class="small-title">brochure</p>
-
-                    <div class="brochure_layout">
-                        <a href="img/sootheze/layout_outside.jpg" data-fancybox="gallery"><img src="img/sootheze/layout_outside.jpg" alt="brochure outside"></a>
-                        <span class="caption">Outside of brochure</span>
+                    <div class="swiper-slide">
+                        <div class="print_stacked_image">
+                            <a href="img/sootheze/layout_outside.jpg" data-fancybox="gallery"><img src="img/sootheze/layout_outside.jpg" alt="brochure outside"></a>
+                            <span class="caption">Outside of brochure</span>
+                        </div>
 
                         <a href="img/sootheze/layout_inside.jpg" data-fancybox="gallery"><img src="img/sootheze/layout_inside.jpg" alt="brochure inside"></a>
                         <span class="caption">Inside of brochure</span>
                     </div>
-                </section>
-            </div>
+                </div>
 
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
 
             <div class="row text-centered">
                 <div class="one-third column small">
@@ -451,6 +456,11 @@
             slidesPerView: 1,
             // spaceBetween: 100,
             loop: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+                stopOnLast: true,
+            },
 
             // If we need pagination
             pagination: {
