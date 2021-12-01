@@ -41,7 +41,9 @@ a img:hover {
 .grandma_hero a,
 .hands_hero a,
 .hands_grid a,
-.hands_img a {
+.hands_img a,
+.fb a,
+.insta a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

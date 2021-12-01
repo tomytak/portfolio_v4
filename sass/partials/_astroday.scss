@@ -1,158 +1,30 @@
-/* HERO */
-
-.hero {
-    .astroday {
-        background-color: $color-space;
+    /* HERO */
+    
+    .hero {
+        .astroday {
+            background-color: $color-space;
+        }
     }
-}
-
-// ASTRO WORKS GRID
-.astro-works-grid {
-    margin-top: 4em;
-    grid-gap: 1em;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . .";
-    .astro_insta {
-        grid-area: astro_insta;
-    }
-    .astro_fb {
-        grid-area: astro_fb;
-    }
-}
-
-@media (max-width: $breakpoint-small) {
+    
+    // ASTRO WORKS GRID
     .astro-works-grid {
-        display: block;
+        margin-top: 4em;
+        grid-gap: 1em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . .";
         .astro_insta {
-            margin-bottom: 1em;
+            grid-area: astro_insta;
+        }
+        .astro_fb {
+            grid-area: astro_fb;
         }
     }
-}
-
-// PRINT MATERIAL
-.astro_sticker_grid {
-    width: 90%;
-    display: grid;
-    padding-top: 2em;
-    margin: 0 auto;
-    grid-gap: 1em;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ." "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . .";
-    .sticker_mockup {
-        grid-area: sticker_mockup;
-    }
-    .astro_sticker {
-        grid-area: astro_sticker;
-    }
-}
-
-.astro_poster_grid {
-    width: 90%;
-    display: grid;
-    padding-top: 2em;
-    margin: 0 auto;
-    grid-gap: 1em;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ." "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . .";
-    .poster_mockup {
-        grid-area: poster_mockup;
-    }
-    .astro_poster {
-        grid-area: astro_poster;
-    }
-}
-
-.astro_banner_grid {
-    width: 90%;
-    display: grid;
-    padding-top: 2em;
-    margin: 0 auto;
-    grid-gap: 1em;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ." "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . .";
-    .banner_mockup {
-        grid-area: banner_mockup;
-    }
-    .astro_banner {
-        grid-area: astro_banner;
-    }
-}
-
-@media (max-width: $breakpoint-small) {
-    .astro_sticker_grid,
-    .astro_poster_grid,
-    .astro_banner_grid {
-        display: block;
-    }
-    .sticker_mockup,
-    .astro_sticker,
-    .poster_mockup,
-    .astro_poster,
-    .banner_mockup,
-    .astro_banner {
-        margin-bottom: 1em;
-    }
-}
-
-//   SOCIAL MEDIA
-#social_media {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    .insta {
-        margin-top: 1em;
-        .astro-insta-grid {
-            max-width: 80%;
-            display: grid;
-            margin: 2em;
-            grid-gap: 2em;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-areas: ". astro_insta_gif astro_insta_gif astro_insta_gif . . ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta1 astro_insta1 ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta2 astro_insta2 ." ". astro_insta_gif astro_insta_gif astro_insta_gif . . .";
-            .astro_insta_gif {
-                grid-area: astro_insta_gif;
-            }
-            .astro_insta1 {
-                grid-area: astro_insta1;
-            }
-            .astro_insta2 {
-                grid-area: astro_insta2;
-            }
-        }
-        @media (max-width: $breakpoint-small) {
-            .astro-insta-grid {
-                display: block;
-            }
-            .astro_insta_gif,
-            .astro_insta1,
-            .astro_insta2 {
+    
+    @media (max-width: $breakpoint-small) {
+        .astro-works-grid {
+            display: block;
+            .astro_insta {
                 margin-bottom: 1em;
             }
         }
     }
-    // FACEBOOK___________
-    .fb {
-        margin-top: 10em;
-        .astro-fb-grid {
-            max-width: 80%;
-            display: grid;
-            margin: 2em;
-            grid-gap: 2em;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-areas: "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ." "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . .";
-            .astro_mobile_fb {
-                grid-area: astro_mobile_fb;
-            }
-            .astro_banner_fb {
-                grid-area: astro_banner_fb;
-            }
-        }
-        @media (max-width: $breakpoint-small) {
-            .astro-fb-grid {
-                display: block;
-            }
-            .astro_mobile_fb,
-            .astro_banner_fb {
-                margin-top: 1.5em;
-            }
-        }
-    }
-}

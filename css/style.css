@@ -670,7 +670,9 @@ a img:hover {
 .grandma_hero a,
 .hands_hero a,
 .hands_grid a,
-.hands_img a {
+.hands_img a,
+.fb a,
+.insta a {
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -1406,6 +1408,9 @@ section {
 .final_product {
   margin-top: 0; }
 
+.grid_stacked_image {
+  padding-bottom: 1em; }
+
 #print {
   margin-bottom: 10em; }
 
@@ -1435,15 +1440,80 @@ section {
     -ms-grid-row-align: center;
     align-self: center; }
 
-.print_stacked_image {
-  padding-bottom: 1em; }
-
 @media (max-width: 768px) {
   .print_grid {
     display: block; }
   .print_mockup,
   .print_image {
     margin-bottom: 1em; } }
+
+#social_media {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #social_media .insta {
+    margin-top: 1em; }
+  #social_media .insta_grid {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2em;
+    -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+    grid-template-areas: ". insta_mockup insta_mockup insta_mockup . . ." ". insta_mockup insta_mockup insta_mockup insta_image insta_image ." ". insta_mockup insta_mockup insta_mockup insta_image insta_image ." ". insta_mockup insta_mockup insta_mockup . . ."; }
+    #social_media .insta_grid .insta_mockup {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 7;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 5;
+      grid-area: insta_mockup; }
+    #social_media .insta_grid .insta_image {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 3;
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 3;
+      grid-area: insta_image;
+      -ms-grid-row-align: center;
+      align-self: center; }
+  #social_media .fb {
+    margin-top: 10em; }
+  #social_media .fb_grid {
+    display: -ms-grid;
+    display: grid;
+    margin: 2em;
+    grid-gap: 2em;
+    -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: auto 2em auto 2em auto 2em auto;
+    grid-template-areas: "fb_mockup fb_mockup fb_mockup . . . ." "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image" "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image" "fb_mockup fb_mockup fb_mockup . . . ."; }
+    #social_media .fb_grid .fb_mockup {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 7;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 5;
+      grid-area: fb_mockup; }
+    #social_media .fb_grid .fb_image {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 3;
+      -ms-grid-column: 7;
+      -ms-grid-column-span: 7;
+      grid-area: fb_image; }
+  @media (max-width: 768px) {
+    #social_media .insta_grid,
+    #social_media .fb_grid {
+      display: block; }
+    #social_media .insta_mockup,
+    #social_media .insta_image,
+    #social_media .fb_mockup,
+    #social_media .fb_image {
+      margin-bottom: 1em; } }
+
+.final_image_bottom .button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
 .text-centered {
@@ -2588,6 +2658,20 @@ fade-in {
     -ms-grid-column: 3;
     -ms-grid-column-span: 7; } }
 
+@media (max-width: 768px) {
+  .solar-works-grid .moon_insta {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 7; }
+  .solar-works-grid .venus_vid {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11; }
+  .solar-works-grid .solar_fb {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 7; } }
+
 .solar-illustration-grid {
   display: -ms-grid;
   display: grid;
@@ -2718,241 +2802,6 @@ fade-in {
   .tide_ani,
   .loc_ani {
     margin-bottom: 1em; } }
-
-#social_media {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #social_media .insta {
-    margin-top: 1em; }
-    #social_media .insta .sun-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". sun_gif sun_gif sun_gif . . ." ". sun_gif sun_gif sun_gif sun_insta sun_insta ."  ". sun_gif sun_gif sun_gif insta_info insta_info ."  ". sun_gif sun_gif sun_gif . . ."; }
-      #social_media .insta .sun-insta-grid .sun_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: sun_gif; }
-      #social_media .insta .sun-insta-grid .sun_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: sun_insta; }
-      #social_media .insta .sun-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .moon-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". moon_gif moon_gif moon_gif . . ." ". moon_gif moon_gif moon_gif moon_insta moon_insta ." ". moon_gif moon_gif moon_gif insta_info insta_info ." ". moon_gif moon_gif moon_gif . . ."; }
-      #social_media .insta .moon-insta-grid .moon_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: moon_gif; }
-      #social_media .insta .moon-insta-grid .moon_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 3;
-        grid-area: moon_insta; }
-      @media (max-width: 768px) {
-  .solar-works-grid .moon_insta {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7; }
-  .solar-works-grid .venus_vid {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 11; }
-  .solar-works-grid .solar_fb {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7; }
-  #social_media .insta .moon-insta-grid .moon_insta {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7; } }
-      #social_media .insta .moon-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .asteroid-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". asteroid_gif asteroid_gif asteroid_gif . . ." ". asteroid_gif asteroid_gif asteroid_gif asteroid_insta asteroid_insta ." ". asteroid_gif asteroid_gif asteroid_gif insta_info insta_info ." ". asteroid_gif asteroid_gif asteroid_gif . . ."; }
-      #social_media .insta .asteroid-insta-grid .asteroid_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: asteroid_gif; }
-      #social_media .insta .asteroid-insta-grid .asteroid_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: asteroid_insta; }
-      #social_media .insta .asteroid-insta-grid .insta_info {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: insta_info; }
-    #social_media .insta .solar-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". solar_gif solar_gif solar_gif . . ." ". solar_gif solar_gif solar_gif solar_insta solar_insta ." ". solar_gif solar_gif solar_gif solar_info solar_info ." ". solar_gif solar_gif solar_gif . . ."; }
-      #social_media .insta .solar-insta-grid .solar_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: solar_gif; }
-      #social_media .insta .solar-insta-grid .solar_insta {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: solar_insta; }
-    @media (max-width: 768px) {
-      #social_media .insta .sun-insta-grid,
-      #social_media .insta .moon-insta-grid,
-      #social_media .insta .asteroid-insta-grid,
-      #social_media .insta .solar-insta-grid {
-        display: block; }
-      #social_media .insta .sun_gif,
-      #social_media .insta .sun_insta,
-      #social_media .insta .insta_info,
-      #social_media .insta .moon_gif,
-      #social_media .insta .moon_insta,
-      #social_media .insta .asteroid_gif,
-      #social_media .insta .asteroid_insta,
-      #social_media .insta .solar_gif,
-      #social_media .insta .solar_insta {
-        margin-bottom: 1em; } }
-  #social_media .fb {
-    margin-top: 10em; }
-    #social_media .fb .solar-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "mobile_fb mobile_fb mobile_fb . . . ." "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb banner_fb banner_fb banner_fb banner_fb" "mobile_fb mobile_fb mobile_fb . . . ."; }
-      #social_media .fb .solar-fb-grid .mobile_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: mobile_fb; }
-      #social_media .fb .solar-fb-grid .banner_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_fb; }
-    #social_media .fb .sun-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ." "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb banner_sun_fb" "mobile_sun_fb mobile_sun_fb mobile_sun_fb . . . ."; }
-      #social_media .fb .sun-fb-grid .mobile_sun_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: mobile_sun_fb; }
-      #social_media .fb .sun-fb-grid .banner_sun_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_sun_fb; }
-    #social_media .fb .moon-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ." "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb banner_moon_fb" "mobile_moon_fb mobile_moon_fb mobile_moon_fb . . . ."; }
-      #social_media .fb .moon-fb-grid .mobile_moon_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: mobile_moon_fb; }
-      #social_media .fb .moon-fb-grid .banner_moon_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_moon_fb; }
-    #social_media .fb .asteroid-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ." "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb banner_asteroid_fb" "mobile_asteroid_fb mobile_asteroid_fb mobile_asteroid_fb . . . ."; }
-      #social_media .fb .asteroid-fb-grid .mobile_asteroid_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: mobile_asteroid_fb; }
-      #social_media .fb .asteroid-fb-grid .banner_asteroid_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_asteroid_fb; }
-    @media (max-width: 768px) {
-      #social_media .fb .solar-fb-grid,
-      #social_media .fb .sun-fb-grid,
-      #social_media .fb .moon-fb-grid,
-      #social_media .fb .asteroid-fb-grid {
-        display: block; }
-      #social_media .fb .mobile_fb,
-      #social_media .fb .banner_fb,
-      #social_media .fb .mobile_sun_fb,
-      #social_media .fb .banner_sun_fb,
-      #social_media .fb .mobile_moon_fb,
-      #social_media .fb .banner_moon_fb,
-      #social_media .fb .mobile_asteroid_fb,
-      #social_media .fb .banner_asteroid_fb {
-        margin-top: 1.5em; } }
 
 .youtube {
   margin-bottom: 2em; }
@@ -3090,178 +2939,6 @@ fade-in {
     .astro-works-grid .astro_insta {
       margin-bottom: 1em; } }
 
-.astro_sticker_grid {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ." "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup astro_sticker astro_sticker" "sticker_mockup sticker_mockup sticker_mockup sticker_mockup sticker_mockup . ."; }
-  .astro_sticker_grid .sticker_mockup {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: sticker_mockup; }
-  .astro_sticker_grid .astro_sticker {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_sticker; }
-
-.astro_poster_grid {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ." "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup astro_poster astro_poster" "poster_mockup poster_mockup poster_mockup poster_mockup poster_mockup . ."; }
-  .astro_poster_grid .poster_mockup {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: poster_mockup; }
-  .astro_poster_grid .astro_poster {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_poster; }
-
-.astro_banner_grid {
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 2em;
-  margin: 0 auto;
-  grid-gap: 1em;
-  -ms-grid-columns: 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr 1em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 1em auto 1em auto 1em auto;
-  grid-template-areas: "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ." "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup astro_banner astro_banner" "banner_mockup banner_mockup banner_mockup banner_mockup banner_mockup . ."; }
-  .astro_banner_grid .banner_mockup {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-area: banner_mockup; }
-  .astro_banner_grid .astro_banner {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 3;
-    grid-area: astro_banner; }
-
-@media (max-width: 768px) {
-  .astro_sticker_grid,
-  .astro_poster_grid,
-  .astro_banner_grid {
-    display: block; }
-  .sticker_mockup,
-  .astro_sticker,
-  .poster_mockup,
-  .astro_poster,
-  .banner_mockup,
-  .astro_banner {
-    margin-bottom: 1em; } }
-
-#social_media {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #social_media .insta {
-    margin-top: 1em; }
-    #social_media .insta .astro-insta-grid {
-      max-width: 80%;
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". astro_insta_gif astro_insta_gif astro_insta_gif . . ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta1 astro_insta1 ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta2 astro_insta2 ." ". astro_insta_gif astro_insta_gif astro_insta_gif . . ."; }
-      #social_media .insta .astro-insta-grid .astro_insta_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: astro_insta_gif; }
-      #social_media .insta .astro-insta-grid .astro_insta1 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: astro_insta1; }
-      #social_media .insta .astro-insta-grid .astro_insta2 {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: astro_insta2; }
-    @media (max-width: 768px) {
-      #social_media .insta .astro-insta-grid {
-        display: block; }
-      #social_media .insta .astro_insta_gif,
-      #social_media .insta .astro_insta1,
-      #social_media .insta .astro_insta2 {
-        margin-bottom: 1em; } }
-  #social_media .fb {
-    margin-top: 10em; }
-    #social_media .fb .astro-fb-grid {
-      max-width: 80%;
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ." "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ."; }
-      #social_media .fb .astro-fb-grid .astro_mobile_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: astro_mobile_fb; }
-      #social_media .fb .astro-fb-grid .astro_banner_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: astro_banner_fb; }
-    @media (max-width: 768px) {
-      #social_media .fb .astro-fb-grid {
-        display: block; }
-      #social_media .fb .astro_mobile_fb,
-      #social_media .fb .astro_banner_fb {
-        margin-top: 1.5em; } }
-
 /* HERO */
 .hero .pele {
   background-color: #FFAA00; }
@@ -3278,123 +2955,11 @@ fade-in {
   max-width: 35em;
   margin: 0 auto; }
 
-#social_media {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #social_media .insta {
-    margin-top: 1em; }
-    #social_media .insta .pele-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". phone_insta_entry phone_insta_entry phone_insta_entry . . ." ". phone_insta_entry phone_insta_entry phone_insta_entry  banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry banner_entry_insta banner_entry_insta ." ". phone_insta_entry phone_insta_entry phone_insta_entry . . ."; }
-      #social_media .insta .pele-insta-grid .phone_insta_entry {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: phone_insta_entry; }
-      #social_media .insta .pele-insta-grid .banner_entry_insta {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: banner_entry_insta; }
-    #social_media .insta .person-insta-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". phone_insta_person phone_insta_person phone_insta_person . . ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person  person_insta_banner person_insta_banner ." ". phone_insta_person phone_insta_person phone_insta_person . . ."; }
-      #social_media .insta .person-insta-grid .phone_insta_person {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: phone_insta_person; }
-      #social_media .insta .person-insta-grid .person_insta_banner {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: person_insta_banner; }
-    @media (max-width: 768px) {
-      #social_media .insta .pele-insta-grid,
-      #social_media .insta .person-insta-grid {
-        display: block; }
-      #social_media .insta .banner_entry_insta,
-      #social_media .insta .person_insta_banner {
-        margin-top: 1em; } }
-  #social_media .fb {
-    margin-top: 10em; }
-    #social_media .fb .pele-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "phone_entry_fb phone_entry_fb phone_entry_fb . . . ." "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb banner_fb banner_fb banner_fb banner_fb" "phone_entry_fb phone_entry_fb phone_entry_fb . . . ."; }
-      #social_media .fb .pele-fb-grid .phone_entry_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: phone_entry_fb; }
-      #social_media .fb .pele-fb-grid .banner_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: banner_fb; }
-    #social_media .fb .person-fb-grid {
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "pele_person_fb pele_person_fb pele_person_fb. . . ." "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb person_fb_banner person_fb_banner person_fb_banner person_fb_banner" "pele_person_fb pele_person_fb pele_person_fb . . . ."; }
-      #social_media .fb .person-fb-grid .pele_person_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: pele_person_fb; }
-      #social_media .fb .person-fb-grid .person_fb_banner {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: person_fb_banner; }
-    @media (max-width: 768px) {
-      #social_media .fb .pele-fb-grid,
-      #social_media .fb .person-fb-grid {
-        display: block; }
-      #social_media .fb .banner_fb,
-      #social_media .fb .person_fb_banner {
-        margin-top: 1em; } }
-
 .pele_medals {
   margin-top: 10em; }
   .pele_medals img {
     margin-top: 2em;
     margin-bottom: 4em; }
-
-.final_image_bottom .button {
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin-bottom: 4em; }
 
 .credits .row {
   -webkit-box-pack: justify;
@@ -3674,97 +3239,6 @@ fade-in {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; } }
-
-.sightings-insta-grid,
-.sightings-fb-grid {
-  max-width: 80%; }
-
-.sightings-insta-grid {
-  display: -ms-grid;
-  display: grid;
-  margin: 2em;
-  grid-gap: 2em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-  grid-template-areas: ". phone_insta_sightings phone_insta_sightings phone_insta_sightings . . ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings post_insta_sightings post_insta_sightings ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings post_insta_sightings post_insta_sightings ." ". phone_insta_sightings phone_insta_sightings phone_insta_sightings . . ."; }
-  .sightings-insta-grid .phone_insta_sightings {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-area: phone_insta_sightings; }
-  .sightings-insta-grid .post_insta_sightings {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
-    grid-area: post_insta_sightings; }
-
-@media (max-width: 768px) {
-  .sightings-insta-grid {
-    display: block; }
-    .sightings-insta-grid .phone_insta_sightings,
-    .sightings-insta-grid .post_insta_sightings {
-      margin-bottom: 1em; } }
-
-.sightings-fb-grid {
-  display: -ms-grid;
-  display: grid;
-  margin: 2em;
-  grid-gap: 2em;
-  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-  grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-  grid-template-areas: "phone_sightings_fb phone_sightings_fb phone_sightings_fb . . . ." "phone_sightings_fb phone_sightings_fb phone_sightings_fb sightings_ani_fb sightings_ani_fb sightings_ani_fb sightings_ani_fb" "phone_sightings_fb phone_sightings_fb phone_sightings_fb sightings_show_fb sightings_show_fb sightings_show_fb sightings_show_fb" "phone_sightings_fb phone_sightings_fb phone_sightings_fb. . . ."; }
-  .sightings-fb-grid .phone_sightings_fb {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-area: phone_sightings_fb; }
-  .sightings-fb-grid .sightings_ani_fb {
-    -ms-grid-row: 3;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
-    -ms-grid-row: 3;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
-    grid-area: sightings_ani_fb; }
-  .sightings-fb-grid .sightings_show_fb {
-    -ms-grid-row: 5;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
-    -ms-grid-row: 5;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
-    grid-area: sightings_show_fb; }
-
-@media (max-width: 768px) {
-  .sightings-fb-grid {
-    display: block; }
-    .sightings-fb-grid .phone_sightings_fb,
-    .sightings-fb-grid .sightings_ani_fb,
-    .sightings-fb-grid .sightings_show_fb {
-      margin-bottom: 1em; } }
-
-.final_image_bottom .button {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
 
 .grandma_hero {
   width: 60%;
@@ -4150,16 +3624,8 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 3;
     -ms-grid-column-span: 5;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
     grid-area: phone_insta_sightings; }
   .sightings-insta-grid .post_insta_sightings {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 3;
     -ms-grid-column: 9;
@@ -4187,23 +3653,13 @@ fade-in {
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: phone_sightings_fb; }
   .sightings-fb-grid .sightings_ani_fb {
     -ms-grid-row: 3;
     -ms-grid-column: 7;
     -ms-grid-column-span: 7;
-    -ms-grid-row: 3;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
     grid-area: sightings_ani_fb; }
   .sightings-fb-grid .sightings_show_fb {
-    -ms-grid-row: 5;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 7;
     -ms-grid-row: 5;
     -ms-grid-column: 7;
     -ms-grid-column-span: 7;
@@ -4216,12 +3672,6 @@ fade-in {
     .sightings-fb-grid .sightings_ani_fb,
     .sightings-fb-grid .sightings_show_fb {
       margin-bottom: 1em; } }
-
-.final_image_bottom .button {
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
 
 /* HERO */
 .hero .access {
@@ -4352,90 +3802,3 @@ fade-in {
     align-items: center; }
     .original_logo .row .two-thirds {
       padding-right: 5em; }
-
-#social_media {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #social_media .insta {
-    margin-top: 1em; }
-    #social_media .insta .astro-insta-grid {
-      max-width: 80%;
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: ". astro_insta_gif astro_insta_gif astro_insta_gif . . ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta1 astro_insta1 ." ". astro_insta_gif astro_insta_gif astro_insta_gif astro_insta2 astro_insta2 ." ". astro_insta_gif astro_insta_gif astro_insta_gif . . ."; }
-      #social_media .insta .astro-insta-grid .astro_insta_gif {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 5;
-        grid-area: astro_insta_gif; }
-      #social_media .insta .astro-insta-grid .astro_insta1 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        -ms-grid-row: 3;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: astro_insta1; }
-      #social_media .insta .astro-insta-grid .astro_insta2 {
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        -ms-grid-row: 5;
-        -ms-grid-column: 9;
-        -ms-grid-column-span: 3;
-        grid-area: astro_insta2; }
-    @media (max-width: 768px) {
-      #social_media .insta .astro-insta-grid {
-        display: block; }
-      #social_media .insta .astro_insta_gif,
-      #social_media .insta .astro_insta1,
-      #social_media .insta .astro_insta2 {
-        margin-bottom: 1em; } }
-  #social_media .fb {
-    margin-top: 10em; }
-    #social_media .fb .astro-fb-grid {
-      max-width: 80%;
-      display: -ms-grid;
-      display: grid;
-      margin: 2em;
-      grid-gap: 2em;
-      -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr 2em 1fr;
-      grid-template-columns: repeat(7, 1fr);
-      -ms-grid-rows: auto 2em auto 2em auto 2em auto;
-      grid-template-areas: "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ." "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb astro_banner_fb astro_banner_fb astro_banner_fb astro_banner_fb" "astro_mobile_fb astro_mobile_fb astro_mobile_fb . . . ."; }
-      #social_media .fb .astro-fb-grid .astro_mobile_fb {
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        grid-area: astro_mobile_fb; }
-      #social_media .fb .astro-fb-grid .astro_banner_fb {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 3;
-        -ms-grid-column: 7;
-        -ms-grid-column-span: 7;
-        grid-area: astro_banner_fb; }
-    @media (max-width: 768px) {
-      #social_media .fb .astro-fb-grid {
-        display: block; }
-      #social_media .fb .astro_mobile_fb,
-      #social_media .fb .astro_banner_fb {
-        margin-top: 1.5em; } }
