@@ -1,0 +1,79 @@
+    /* HERO */
+    
+    .hero {
+        .sci {
+            background-color: $color-sci;
+            @media (max-width: $breakpoint-small) {
+                margin-top: 1em;
+            }
+        }
+    }
+    
+    #logo {
+        .logo .final_logo {
+            padding-right: 0;
+        }
+    }
+    
+    // Sci WORKS GRID_______
+    .sci-works-grid {
+        align-items: flex-end;
+        display: grid;
+        margin-top: 4em;
+        grid-gap: 1em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: ". atmosphere_clip atmosphere_clip atmosphere_clip alala_insta .";
+        .atmosphere_clip {
+            grid-area: atmosphere_clip;
+            align-self: flex-end;
+        }
+        .alala_insta {
+            grid-area: alala_insta;
+        }
+    }
+    
+    @media (max-width: $breakpoint-small) {
+        .sci-works-grid {
+            display: block;
+        }
+        .atmosphere_clip {
+            margin-bottom: 1em;
+        }
+        .alala_insta {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    
+    //   ILLUSTRATION
+    .sci-open-closing-grid {
+        display: grid;
+        margin-top: 4em;
+        grid-gap: 1em;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: "whale_o-c whale_o-c birds_o-c birds_o-c alala_o-c alala_o-c volcanos_o-c volcanos_o-c""atmosphere_o-c atmosphere_o-c sun_o-c sun_o-c astrobiology_o-c astrobiology_o-c jwst_o-c jwst_o-c";
+        .whale_o-c {
+            grid-area: whale_o-c;
+        }
+        .birds_o-c {
+            grid-area: birds_o-c;
+        }
+        .alala_o-c {
+            grid-area: alala_o-c;
+        }
+        .volcanos_o-c {
+            grid-area: volcanos_o-c;
+        }
+        .atmosphere_o-c {
+            grid-area: atmosphere_o-c;
+        }
+        .sun_o-c {
+            grid-area: sun_o-c;
+        }
+        .astrobiology_o-c {
+            grid-area: astrobiology_o-c;
+        }
+        .jwst_o-c {
+            grid-area: jwst_o-c;
+        }
+    }

@@ -32,6 +32,7 @@ a img:hover {
 #artwork a,
 .pele_medals a,
 .sightings-bg-grid a,
+.sightings_mobile a,
 .index_card_img a,
 .post_insta_sightings a,
 .sightings_ani_fb a,
@@ -43,7 +44,13 @@ a img:hover {
 .hands_grid a,
 .hands_img a,
 .fb a,
-.insta a {
+.insta a,
+.access_web_grid a,
+.access-works-grid a,
+.videos a,
+.sci-works-grid a,
+.solar-works-grid a,
+.animation a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

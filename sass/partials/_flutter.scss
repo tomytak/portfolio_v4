@@ -1,33 +1,33 @@
-.flutter {
-  background-color: $color-flutter;
+.hero {
+    .flutter {
+        background-color: $color-flutter;
+        @media (max-width: $breakpoint-small) {
+            margin-top: 1em;
+        }
+    }
 }
 
 .illustrations {
-  display: grid;
-  margin: 0 auto;
-  grid-gap: 1em;
-  margin-top: 2em;
-  margin-bottom: 3em;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-areas:
-    "small-title small-title . . . . ."
-    "flower flower bird bird bird bird bird";
-
-  .small-title {
-    grid-area: small-title;
-  }
-
-  .flower {
-    grid-area: flower;
-  }
-
-  .bird {
-    grid-area: bird;
-  }
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "small-title small-title . . . . ." "flower flower bird bird bird bird bird";
+    .small-title {
+        grid-area: small-title;
+    }
+    .flower {
+        grid-area: flower;
+    }
+    .bird {
+        grid-area: bird;
+    }
 }
 
 @media (max-width: $breakpoint-small) {
-  .illustrations {
-    display: block;
-  }
+    .illustrations {
+        display: block;
+    }
 }

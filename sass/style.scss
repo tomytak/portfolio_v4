@@ -66,6 +66,8 @@ $color-astro-accent: #F6961C;
 $color-sightings: #BFC0BE;
 $color-grandma: rgba(220, 191, 147, 0.879);
 $color-access: #4D9ED7;
+$color-sci:#DDDD;
+$color-christmas:#fdbb20;
 // Breakpoints_______________________ 
 $breakpoint-small: 768px;
 $breakpoint-medium: 1050px;
@@ -99,3 +101,5 @@ $breakpoint-large: 1250px;
 @import "partials/_hands.scss";
 @import "partials/_mk.scss";
 @import "partials/_access.scss";
+@import "partials/_sci.scss";
+@import "partials/_christmas.scss"

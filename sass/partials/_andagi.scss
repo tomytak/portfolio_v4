@@ -1,3 +1,8 @@
-.andagi {
-  background-color: $color-andagi;
+.hero {
+    .andagi {
+        background-color: $color-andagi;
+        @media (max-width: $breakpoint-small) {
+            margin-top: 1em;
+        }
+    }
 }

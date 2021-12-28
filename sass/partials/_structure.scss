@@ -1,383 +1,339 @@
-                /* Main Sections */
-                
-                section {
-                    padding: 7em 0;
-                    display: -ms-grid;
-                    display: grid;
-                }
-                /* LINKS _________________________________*/
-                /* Horizontal Rules */
-                
-                .hr_ {
-                    border: 0;
-                    height: 1px;
-                    background: $color-black;
-                    margin: 4em 0;
-                }
-                /* HELPERS _________________________________*/
-                
-                .sectionhead:after {
-                    content: "";
-                    display: block;
-                    width: 100px;
-                    margin: 0 auto;
-                    margin-top: 0.2em;
-                }
-                
-                .text-centered {
-                    text-align: center;
-                }
-                
-                .subheader {
-                    color: $color-gray;
-                    margin-top: 1em;
-                    font-style: normal;
-                    font-weight: normal;
-                    clear: both;
-                }
-                /* site-header ________________________________*/
-                
-                .site-header,
-                .site-footer {
-                    padding: 1em;
-                    color: $color-teal;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-justify-content: space-between;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
-                    h1 {
-                        font-size: 1.5em;
-                        font-family: $headingfont-family;
-                        margin: 0.5em 0 0 0;
-                        /*to adjust baseline with nav text*/
+                    /* Main Sections */
+                    
+                    section {
+                        padding: 7em 0;
+                        display: -ms-grid;
+                        display: grid;
                     }
-                    a {
-                        color: $color-teal;
-                        list-style: none;
-                        text-decoration: none;
-                        text-transform: uppercase;
+                    /* LINKS _________________________________*/
+                    /* Horizontal Rules */
+                    
+                    .hr_ {
+                        border: 0;
+                        height: 1px;
+                        background: $color-black;
+                        margin: 4em 0;
                     }
-                }
-                
-                @media (min-width: $breakpoint-small) {
-                    .site-header {
-                        padding-top: 1em;
-                    }
-                }
-                /* site-id ____________________________-*/
-                
-                .site-id img {
-                    width: 7em;
-                    height: auto;
-                }
-                /*PAGE NAV ___________________________________*/
-                
-                .page-nav {
-                    z-index: 300;
-                    position: fixed;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    text-align: right;
-                    .yellow-circle {
-                        border: 3px solid $color-yellow;
-                        background-color: $color-white;
-                        border-radius: 100%;
-                        margin-bottom: 0;
-                    }
-                    .nav-revealer {
-                        opacity: 0;
-                        margin-left: -5em;
-                        position: absolute;
-                        z-index: 200;
-                        padding-top: 0.3em;
-                        padding-bottom: 0.3em;
-                        padding-left: 0.3em;
-                        margin-top: -0.5em;
-                    }
-                    .yellow-circle:hover {
-                        background-color: $color-yellow;
-                        .nav-revealer {
-                            background-color: $color-white;
-                            margin-left: -8.5em;
-                            opacity: 1;
-                            padding: 0.3em;
-                            margin-top: -0.5em;
-                            z-index: 200;
-                            position: absolute;
-                            transition: all 0.4s ease;
-                        }
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $color-teal;
-                    }
-                    ul {
-                        margin: 0;
-                    }
-                    ul li {
+                    /* HELPERS _________________________________*/
+                    
+                    .sectionhead:after {
+                        content: "";
                         display: block;
-                        font-family: $headingfont-family;
-                        padding-top: 2em;
-                        padding: 1em 0;
-                        padding-right: 0.6em;
+                        width: 100px;
+                        margin: 0 auto;
+                        margin-top: 0.2em;
                     }
-                    ul li:hover,
-                    a.active {
-                        .yellow-circle {
-                            background-color: $color-yellow;
+                    
+                    .text-centered {
+                        text-align: center;
+                    }
+                    
+                    .subheader {
+                        color: $color-gray;
+                        margin-top: 1em;
+                        font-style: normal;
+                        font-weight: normal;
+                        clear: both;
+                    }
+                    /* site-header ________________________________*/
+                    
+                    .site-header,
+                    .site-footer {
+                        padding: 1em;
+                        color: $color-teal;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        h1 {
+                            font-size: 1.5em;
+                            font-family: $headingfont-family;
+                            margin: 0.5em 0 0 0;
+                            /*to adjust baseline with nav text*/
+                        }
+                        a {
+                            color: $color-teal;
+                            list-style: none;
+                            text-decoration: none;
+                            text-transform: uppercase;
                         }
                     }
-                }
-                
-                //AWARD MEDAL SUB-PAGE——————————————————————————
-                .zoo,
-                .conquest,
-                .naha {
-                    a {
-                        text-decoration: none;
+                    
+                    @media (min-width: $breakpoint-small) {
+                        .site-header {
+                            padding-top: 1em;
+                        }
                     }
-                    a:hover {
-                        text-decoration: underline;
-                        color: $color-red;
-                    }
-                }
-                
-                .proj_summary {
-                    position: relative;
-                    .award_top_corner {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    /* site-id ____________________________-*/
+                    
+                    .site-id img {
                         width: 7em;
-                        margin-top: 0;
+                        height: auto;
                     }
-                    .award_type_subpage {
-                        margin-top: .5em;
+                    /*PAGE NAV ___________________________________*/
+                    
+                    .page-nav {
+                        z-index: 300;
+                        position: fixed;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        text-align: right;
+                        .yellow-circle {
+                            border: 3px solid $color-yellow;
+                            background-color: $color-white;
+                            border-radius: 100%;
+                            margin-bottom: 0;
+                        }
+                        .nav-revealer {
+                            opacity: 0;
+                            margin-left: -5em;
+                            position: absolute;
+                            z-index: 200;
+                            padding-top: 0.3em;
+                            padding-bottom: 0.3em;
+                            padding-left: 0.3em;
+                            margin-top: -0.5em;
+                        }
+                        .yellow-circle:hover {
+                            background-color: $color-yellow;
+                            .nav-revealer {
+                                background-color: $color-white;
+                                margin-left: -8.5em;
+                                opacity: 1;
+                                padding: 0.3em;
+                                margin-top: -0.5em;
+                                z-index: 200;
+                                position: absolute;
+                                transition: all 0.4s ease;
+                            }
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $color-teal;
+                        }
+                        ul {
+                            margin: 0;
+                        }
+                        ul li {
+                            display: block;
+                            font-family: $headingfont-family;
+                            padding-top: 2em;
+                            padding: 1em 0;
+                            padding-right: 0.6em;
+                        }
+                        ul li:hover,
+                        a.active {
+                            .yellow-circle {
+                                background-color: $color-yellow;
+                            }
+                        }
                     }
-                }
-                
-                @media (max-width: $breakpoint-small) {
+                    
+                    //AWARD MEDAL SUB-PAGE——————————————————————————
+                    .zoo,
+                    .conquest,
+                    .naha {
+                        a {
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                            color: $color-red;
+                        }
+                    }
+                    
                     .proj_summary {
+                        position: relative;
                         .award_top_corner {
                             position: absolute;
                             top: 0;
                             left: 0;
-                            width: 6em;
+                            width: 7em;
                             margin-top: 0;
                         }
-                        .award {
-                            margin-left: 2em;
-                            font-size: 1.3em;
+                        .award_type_subpage {
+                            margin-top: .5em;
                         }
                     }
-                }
-                /* OBJECTIVE _______________________*/
-                
-                .objective {
-                    margin: 0 auto;
-                    padding: 0;
-                    .row {
-                        align-items: flex-start;
-                        border-bottom: 2px dashed $color-red;
-                        padding-bottom: 3em;
-                        justify-content: space-between;
-                    }
-                    .one-third {
-                        margin-right: 1em;
-                        ul {
-                            padding-top: 1em;
-                            margin-top: 1em;
-                            padding-left: 0;
-                            li:before {
-                                content: "\26AC";
-                                color: $color-yellow;
-                                display: inline-block;
-                                width: 1.5em;
-                                padding-top: 0;
+                    
+                    @media (max-width: $breakpoint-small) {
+                        .proj_summary {
+                            .award_top_corner {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 6em;
+                                margin-top: 0;
+                            }
+                            .award {
+                                margin-left: 2em;
+                                font-size: 1.3em;
                             }
                         }
                     }
-                    .short {
-                        max-width: 17em;
-                    }
-                    hr {
-                        margin-top: 1em;
-                        margin-bottom: -1em;
-                        border-top: 2px dashed $color-red;
-                        width: 16em;
-                        margin-left: 0;
-                    }
-                }
-                
-                @media (max-width: $breakpoint-medium) {
+                    /* OBJECTIVE _______________________*/
+                    
                     .objective {
-                        hr {
-                            width: 11.5em;
-                        }
-                    }
-                }
-                
-                // THEME________
-                .theme_info {
-                    padding: 0;
-                    .theme_name {
-                        margin-top: 0;
                         margin: 0 auto;
-                        .theme {
-                            color: $color-pele-theme;
-                            text-transform: uppercase;
-                        }
-                        hr {
-                            max-width: 30.5em;
-                            margin-left: 0;
-                            border-top: 2px dashed $color-red;
-                        }
-                    }
-                    .row {
-                        justify-content: space-between;
-                        ul {
-                            list-style-type: none;
-                            padding-left: 0;
-                        }
-                        .theme_image {
-                            margin-left: 0em;
-                        }
-                    }
-                }
-                
-                @media (max-width: $breakpoint-small) {
-                    .theme_info {
+                        padding: 0;
                         .row {
+                            align-items: flex-start;
+                            border-bottom: 2px dashed $color-red;
+                            padding-bottom: 3em;
                             justify-content: space-between;
-                            .one-third {
-                                ul {
-                                    margin-top: 0;
+                        }
+                        .one-third {
+                            margin-right: 1em;
+                            ul {
+                                padding-top: 1em;
+                                margin-top: 1em;
+                                padding-left: 0;
+                                li:before {
+                                    content: "\26AC";
+                                    color: $color-yellow;
+                                    display: inline-block;
+                                    width: 1.5em;
+                                    padding-top: 0;
                                 }
                             }
-                            .two-thirds {
-                                margin-left: 0;
+                        }
+                        .short {
+                            max-width: 17em;
+                        }
+                        hr {
+                            margin-top: 1em;
+                            margin-bottom: -1em;
+                            border-top: 2px dashed $color-red;
+                            width: 16em;
+                            margin-left: 0;
+                        }
+                    }
+                    
+                    @media (max-width: $breakpoint-medium) {
+                        .objective {
+                            hr {
+                                width: 11.5em;
                             }
                         }
                     }
-                }
-                
-                // swiper—veritcal align center____
-                .swiper-wrapper {
-                    align-items: center;
-                }
-                /* DESIGN SYSTEM___________________________*/
-                
-                .type_specimen {
-                    .row {
-                        align-items: flex-start;
-                        justify-content: space-between;
-                    }
-                    img {
-                        margin-top: 1em;
-                    }
-                }
-                
-                // LOGOS_____________
-                .logo {
-                    .row {
-                        justify-content: space-between;
-                    }
-                    .two-thirds {
-                        padding-right: 5em;
-                        .final_logo {
-                            margin-top: 2em;
-                            padding-bottom: 0;
+                    
+                    // THEME________
+                    .theme_info {
+                        padding: 0;
+                        .theme_name {
+                            margin-top: 0;
+                            margin: 0 auto;
+                            .theme {
+                                color: $color-pele-theme;
+                                text-transform: uppercase;
+                            }
+                            hr {
+                                max-width: 30.5em;
+                                margin-left: 0;
+                                border-top: 2px dashed $color-red;
+                            }
+                        }
+                        .row {
+                            justify-content: space-between;
+                            ul {
+                                list-style-type: none;
+                                padding-left: 0;
+                            }
+                            .theme_image {
+                                margin-left: 0em;
+                            }
                         }
                     }
-                }
-                
-                .logo_exploration {
-                    margin-top: 2em;
-                    .row {
-                        margin-top: 0;
-                        justify-content: space-between;
-                        align-items: flex-end;
-                        .one-half {
-                            margin-right: 2%;
-                        }
-                    }
+                    
                     @media (max-width: $breakpoint-small) {
-                        .one-half,
-                        .one-third {
-                            margin-top: 3em;
+                        .theme_info {
+                            .row {
+                                justify-content: space-between;
+                                .one-third {
+                                    ul {
+                                        margin-top: 0;
+                                    }
+                                }
+                                .two-thirds {
+                                    margin-left: 0;
+                                }
+                            }
                         }
                     }
-                }
-                
-                // ARTWORK DESKTOP_________________
-                .sky_desktop,
-                .forest_desktop,
-                .cave_desktop,
-                .bg_desktop,
-                .planets_desktop,
-                .solar_animation_desktop,
-                .conquest_patterns_desktop,
-                .light_desktop,
-                .access_art_desktop {
-                    visibility: visible;
-                    display: none;
-                }
-                
-                .sky_mobile,
-                .forest_mobile,
-                .cave_mobile,
-                .bg_mobile,
-                .planets_mobile,
-                .solar_animation_mobile,
-                .dino_ani_mobile,
-                .dino_sketch_mobile,
-                .conquest_art_mobile,
-                .conquest_patterns_mobile,
-                .light_mobile,
-                .astro_mobile,
-                .sightings_mobile,
-                .mk_logov1_mobile,
-                .mk_logov2_mobile,
-                .mk_logo_color_mobile,
-                .access_art_mobile {
-                    display: none;
-                }
-                
-                .dino_ani_desktop {
-                    visibility: visible;
-                }
-                
-                // ARTWORK MOBILE____________________
-                @media (max-width: $breakpoint-small) {
+                    
+                    // swiper—veritcal align center____
+                    .swiper-wrapper {
+                        align-items: center;
+                    }
+                    /* DESIGN SYSTEM___________________________*/
+                    
+                    .type_specimen {
+                        .row {
+                            align-items: flex-start;
+                            justify-content: space-between;
+                        }
+                        img {
+                            margin-top: 1em;
+                        }
+                    }
+                    
+                    // LOGOS_____________
+                    .logo {
+                        .row {
+                            justify-content: space-between;
+                        }
+                        .two-thirds {
+                            padding-right: 5em;
+                            .final_logo {
+                                margin-top: 2em;
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                    
+                    .logo_exploration {
+                        margin-top: 2em;
+                        .row {
+                            margin-top: 0;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            .one-half {
+                                margin-right: 2%;
+                            }
+                        }
+                        @media (max-width: $breakpoint-small) {
+                            .one-half,
+                            .one-third {
+                                margin-top: 3em;
+                            }
+                        }
+                    }
+                    
+                    // ARTWORK DESKTOP_________________
                     .sky_desktop,
                     .forest_desktop,
                     .cave_desktop,
                     .bg_desktop,
                     .planets_desktop,
                     .solar_animation_desktop,
-                    .dino_ani_desktop,
-                    .dino_sketch_desktop,
-                    .conquest_art_desktop,
                     .conquest_patterns_desktop,
                     .light_desktop,
-                    .astro_art_desktop,
-                    .sighitngs_desktop,
-                    .mk_logov1_desktop,
-                    .mk_logov2_desktop,
-                    .mk_logo_color_desktop,
-                    .access_art_desktop {
-                        visibility: hidden;
-                        position: absolute;
+                    .access_art_desktop,
+                    .sci_desktop {
+                        visibility: visible;
+                        display: none;
                     }
+                    
                     .sky_mobile,
                     .forest_mobile,
                     .cave_mobile,
                     .bg_mobile,
                     .planets_mobile,
                     .solar_animation_mobile,
+                    .dino_ani_mobile,
                     .dino_sketch_mobile,
                     .conquest_art_mobile,
                     .conquest_patterns_mobile,
@@ -387,361 +343,485 @@
                     .mk_logov1_mobile,
                     .mk_logov2_mobile,
                     .mk_logo_color_mobile,
-                    .access_art_mobile {
-                        margin-top: 2em;
-                        margin-bottom: 2em;
+                    .access_art_mobile,
+                    .access_web_mobile,
+                    .sci_mobile,
+                    .christmas_mobile {
+                        display: none;
+                    }
+                    
+                    .dino_ani_desktop {
                         visibility: visible;
-                        display: block;
-                        .swiper-slide {
-                            .container_swiper {
-                                align-self: center;
-                                justify-self: center;
-                                display: flex;
-                            }
-                            a img {
-                                width: 80%;
-                                margin: 0 auto;
-                                margin-top: 2em;
-                                margin-bottom: 1em;
-                            }
-                            .conquest_sword {
-                                margin-bottom: 0;
+                    }
+                    
+                    // ARTWORK MOBILE____________________
+                    @media (max-width: $breakpoint-small) {
+                        .sky_desktop,
+                        .forest_desktop,
+                        .cave_desktop,
+                        .bg_desktop,
+                        .planets_desktop,
+                        .solar_animation_desktop,
+                        .dino_ani_desktop,
+                        .dino_sketch_desktop,
+                        .conquest_art_desktop,
+                        .conquest_patterns_desktop,
+                        .light_desktop,
+                        .astro_art_desktop,
+                        .sighitngs_desktop,
+                        .mk_logov1_desktop,
+                        .mk_logov2_desktop,
+                        .mk_logo_color_desktop,
+                        .access_art_desktop,
+                        .access_web_desktop,
+                        .sci_desktop,
+                        .christmas_desktop {
+                            visibility: hidden;
+                            position: absolute;
+                        }
+                        .sky_mobile,
+                        .forest_mobile,
+                        .cave_mobile,
+                        .bg_mobile,
+                        .planets_mobile,
+                        .solar_animation_mobile,
+                        .dino_sketch_mobile,
+                        .conquest_art_mobile,
+                        .conquest_patterns_mobile,
+                        .light_mobile,
+                        .astro_mobile,
+                        .sightings_mobile,
+                        .mk_logov1_mobile,
+                        .mk_logov2_mobile,
+                        .mk_logo_color_mobile,
+                        .access_art_mobile,
+                        .access_web_mobile,
+                        .sci_mobile,
+                        .christmas_mobile {
+                            margin-top: 2em;
+                            margin-bottom: 2em;
+                            visibility: visible;
+                            display: block;
+                            .swiper-slide {
+                                .container_swiper {
+                                    align-self: center;
+                                    justify-self: center;
+                                    display: flex;
+                                }
+                                a img {
+                                    width: 80%;
+                                    margin: 0 auto;
+                                    margin-top: 2em;
+                                    margin-bottom: 1em;
+                                }
+                                .conquest_sword {
+                                    margin-bottom: 0;
+                                }
                             }
                         }
+                        .dino_ani_mobile {
+                            visibility: visible;
+                            display: block;
+                        }
                     }
-                    .dino_ani_mobile {
-                        visibility: visible;
-                        display: block;
+                    
+                    // FINAL PRODUCT____________________________
+                    .final_product {
+                        margin-top: 0;
                     }
-                }
-                
-                // FINAL PRODUCT____________________________
-                .final_product {
-                    margin-top: 0;
-                }
-                
-                // FINAL PRODUCT GRIDS _____
-                .grid_stacked_image {
-                    padding-bottom: 1em;
-                }
-                
-                // PRINT MATERIAL
-                #print {
-                    margin-bottom: 10em;
-                }
-                
-                .print_grid {
-                    width: 90%;
-                    display: grid;
-                    padding-top: 2em;
-                    margin: 0 auto;
-                    grid-gap: 1em;
-                    grid-template-columns: repeat(7, 1fr);
-                    grid-template-areas: "print_mockup print_mockup print_mockup print_mockup print_mockup . ." "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup . .";
-                    .print_mockup {
-                        grid-area: print_mockup;
+                    
+                    // FINAL PRODUCT GRIDS _____
+                    .grid_stacked_image {
+                        padding-bottom: 1em;
                     }
-                    .print_image {
-                        grid-area: print_image;
-                        align-self: center;
+                    
+                    // PRINT MATERIAL
+                    #print {
+                        margin-bottom: 10em;
                     }
-                }
-                
-                @media (max-width: $breakpoint-small) {
+                    
                     .print_grid {
-                        display: block;
-                    }
-                    .print_mockup,
-                    .print_image {
-                        margin-bottom: 1em;
-                    }
-                }
-                
-                // SOCIAL MEDIA GRIDS_________________
-                #social_media {
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                    // INSTAGRAM GRID________________
-                    .insta {
-                        margin-top: 1em;
-                    }
-                    .insta_grid {
-                        width: 80%;
+                        width: 90%;
                         display: grid;
+                        padding-top: 2em;
                         margin: 0 auto;
-                        grid-gap: 2em;
+                        grid-gap: 1em;
                         grid-template-columns: repeat(7, 1fr);
-                        grid-template-areas: ". insta_mockup insta_mockup insta_mockup . . ."". insta_mockup insta_mockup insta_mockup insta_image insta_image ."". insta_mockup insta_mockup insta_mockup insta_image insta_image ."". insta_mockup insta_mockup insta_mockup . . .";
-                        .insta_mockup {
-                            grid-area: insta_mockup;
+                        grid-template-areas: "print_mockup print_mockup print_mockup print_mockup print_mockup . ." "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup print_image print_image" "print_mockup print_mockup print_mockup print_mockup print_mockup . .";
+                        .print_mockup {
+                            grid-area: print_mockup;
                         }
-                        .insta_image {
-                            grid-area: insta_image;
+                        .print_image {
+                            grid-area: print_image;
                             align-self: center;
                         }
                     }
-                    // FACEBOOK_GRID___________________________
-                    .fb {
-                        margin-top: 10em;
-                    }
-                    .fb_grid {
-                        display: grid;
-                        margin: 2em;
-                        grid-gap: 2em;
-                        grid-template-columns: repeat(7, 1fr);
-                        grid-template-areas: "fb_mockup fb_mockup fb_mockup . . . ." "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image" "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image""fb_mockup fb_mockup fb_mockup . . . .";
-                        .fb_mockup {
-                            grid-area: fb_mockup;
-                        }
-                        .fb_image {
-                            grid-area: fb_image;
-                        }
-                    }
+                    
                     @media (max-width: $breakpoint-small) {
-                        .insta_grid,
-                        .fb_grid {
+                        .print_grid {
                             display: block;
                         }
-                        .insta_mockup,
-                        .insta_image,
-                        .fb_mockup,
-                        .fb_image {
+                        .print_mockup,
+                        .print_image {
                             margin-bottom: 1em;
                         }
                     }
-                }
-                
-                // website button_bottom______________
-                .final_image_bottom {
-                    .button {
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                    }
-                }
-                /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
-                
-                .text-centered {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-top: 0;
-                    margin-top: 3em;
-                    margin-bottom: 2em;
-                    .arrow {
-                        padding: 0.2em;
-                        font-size: 2em;
-                    }
-                    a {
-                        align-content: center;
-                        text-transform: uppercase;
-                        letter-spacing: 0.15em;
-                        font-weight: 300;
-                        font-family: $headingfont-family;
-                        text-decoration: none;
-                        color: $color-teal;
-                    }
-                    a:hover {
-                        font-weight: 700;
-                        cursor: pointer;
-                    }
-                }
-                
-                // FOOTER ______________________________________
-                .footer {
-                    border-top: 2px dashed $color-red;
-                    margin-bottom: 5em;
-                    .row {
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        .one-third {
-                            margin-top: 2em;
-                            margin-right: 0;
-                            text-align: center;
-                        }
-                        .one-half {
-                            margin-top: 2em;
-                            margin-right: 0;
-                            text-align: center;
-                        }
-                        h1 {
-                            margin-top: 0.3em;
-                            font-weight: 700;
-                            font-size: 2.5em;
-                            margin-bottom: 0.2em;
-                        }
-                        p {
-                            color: $color-teal;
-                            text-align: center;
+                    
+                    // YOUTUBE VIDEOS___________
+                    .youtube {
+                        margin-bottom: 2em;
+                        .youtube_four_grid {
+                            display: grid;
+                            padding-top: 2em;
                             margin: 0 auto;
+                            grid-gap: 1em;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-areas: "t_left t_left t_right t_right" " b_left b_left b_right b_right";
+                            .t_left {
+                                grid-area: t_left;
+                            }
+                            .t_right {
+                                grid-area: t_right;
+                            }
+                            .b_left {
+                                grid-area: b_left;
+                            }
+                            .b_right {
+                                grid-area: b_right;
+                            }
                         }
-                        a {
-                            text-decoration: none;
+                        .youtube_three_grid {
+                            display: grid;
+                            padding-top: 2em;
+                            margin: 0 auto;
+                            grid-gap: 1em;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-areas: "t_left t_left t_right t_right" ". b_middle b_middle .";
+                            .t_left {
+                                grid-area: t_left;
+                            }
+                            .t_right {
+                                grid-area: t_right;
+                            }
+                            .b_middle {
+                                grid-area: b_middle;
+                            }
                         }
                     }
-                }
-                
-                // INDEX ENTRY MARGIN TOP______________________________
-                @media (max-width: $breakpoint-small) {
-                    .index_entry_section {
-                        margin-top: 1em;
+                    
+                    @media (max-width: $breakpoint-small) {
+                        .youtube {
+                            .youtube_four_grid,
+                            .youtube_three_grid {
+                                display: block;
+                                padding-top: 1em;
+                            }
+                            .t_left,
+                            .t_right,
+                            .b_left,
+                            .b_right,
+                            .b_middle {
+                                margin-left: 1.5em;
+                                margin-right: 1.5em;
+                                margin-top: 1em;
+                            }
+                        }
                     }
-                }
-                
-                // menu icon _____________________
-                * {
-                    box-sizing: border-box;
-                }
-                
-                .site-header .container {
-                    padding: 1em 0.5em;
-                    color: $color-teal;
-                }
-                
-                @media (min-width: 768px) {
-                    .site-header {
+                    
+                    // SOCIAL MEDIA GRIDS_________________
+                    #social_media {
+                        margin-top: 2em;
+                        margin-bottom: 2em;
+                        .fb,
+                        .web_banner,
+                        .banners,
+                        .videos {
+                            margin-top: 10em;
+                        }
+                        .insta_grid,
+                        .fb_grid,
+                        .access_video {
+                            margin-top: 2em;
+                        }
+                        // INSTAGRAM GRID________________
+                        .insta {
+                            margin-top: 2em;
+                        }
+                        .insta_grid {
+                            width: 80%;
+                            margin: 0 auto;
+                            display: grid;
+                            grid-gap: 2em;
+                            grid-template-columns: repeat(7, 1fr);
+                            grid-template-areas: ". insta_mockup insta_mockup insta_mockup . . ."". insta_mockup insta_mockup insta_mockup insta_image insta_image ."". insta_mockup insta_mockup insta_mockup insta_image insta_image ."". insta_mockup insta_mockup insta_mockup . . .";
+                            .insta_mockup {
+                                grid-area: insta_mockup;
+                            }
+                            .insta_image {
+                                grid-area: insta_image;
+                                align-self: center;
+                            }
+                        }
+                        // FACEBOOK_GRID___________________________
+                        .fb_grid {
+                            display: grid;
+                            width: 80%;
+                            margin: 0 auto;
+                            grid-gap: 2em;
+                            grid-template-columns: repeat(7, 1fr);
+                            grid-template-areas: "fb_mockup fb_mockup fb_mockup . . . ." "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image" "fb_mockup fb_mockup fb_mockup fb_image fb_image fb_image fb_image""fb_mockup fb_mockup fb_mockup . . . .";
+                            .fb_mockup {
+                                grid-area: fb_mockup;
+                            }
+                            .fb_image {
+                                grid-area: fb_image;
+                            }
+                        }
+                        @media (max-width: $breakpoint-small) {
+                            .insta_grid,
+                            .fb_grid {
+                                display: block;
+                            }
+                            .insta_mockup,
+                            .insta_image,
+                            .fb_mockup,
+                            .fb_image {
+                                margin-bottom: 1em;
+                            }
+                        }
+                    }
+                    
+                    // website button_bottom______________
+                    .final_image_bottom {
+                        .button {
+                            margin-left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    /* BUTTONS ON BOTTOM TOGGLE NEXT PAGE */
+                    
+                    .text-centered {
                         display: flex;
                         justify-content: space-between;
+                        padding-top: 0;
+                        margin-top: 3em;
+                        margin-bottom: 2em;
+                        .arrow {
+                            padding: 0.2em;
+                            font-size: 2em;
+                        }
+                        a {
+                            align-content: center;
+                            text-transform: uppercase;
+                            letter-spacing: 0.15em;
+                            font-weight: 300;
+                            font-family: $headingfont-family;
+                            text-decoration: none;
+                            color: $color-teal;
+                        }
+                        a:hover {
+                            font-weight: 700;
+                            cursor: pointer;
+                        }
                     }
-                }
-                
-                .site-header a {
-                    text-decoration: none;
-                }
-                /* SITE ID (LOGO) */
-                
-                .site-id h1 {
-                    font-size: 1.5em;
-                    margin: 0;
-                    text-align: center;
-                }
-                
-                .site-id a {
-                    display: inline-block;
-                    padding: 0.25em 0;
-                }
-                /* SITE ID (LOGO) */
-                
-                .site-id h1 {
-                    font-size: 1.5em;
-                    margin: 0;
-                    text-align: center;
-                }
-                
-                .site-id a {
-                    display: inline-block;
-                    padding: 0.25em 0;
-                }
-                /* SITE NAV (Primary Top Nav) */
-                
-                .site-nav {
-                    text-transform: uppercase;
-                    letter-spacing: 0.15em;
-                    font-size: 80%;
-                }
-                
-                .site-nav ul {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    margin: 0;
-                    padding: 0;
-                    font-family: $headingfont-family;
-                }
-                
-                .site-nav li {
-                    list-style: none;
-                }
-                
-                .site-nav a {
-                    display: block;
-                    padding: 0.5em 1em;
-                }
-                /* MENU BUTTON */
-                
-                .menu-button {
-                    position: absolute;
-                    left: -9999px;
-                    padding: 0.5em;
-                }
-                
-                .menu-button:hover {
-                    cursor: pointer;
-                }
-                
-                .menu-button::selection {
-                    color: none;
-                    background: none;
-                }
-                /* TOGGLE-NAV */
-                
-                @media (max-width: 767px) {
-                    .toggle-nav .site-id h1 {
-                        text-align: left;
+                    
+                    // FOOTER ______________________________________
+                    .footer {
+                        border-top: 2px dashed $color-red;
+                        margin-bottom: 5em;
+                        .row {
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            .one-third {
+                                margin-top: 2em;
+                                margin-right: 0;
+                                text-align: center;
+                            }
+                            .one-half {
+                                margin-top: 2em;
+                                margin-right: 0;
+                                text-align: center;
+                            }
+                            h1 {
+                                margin-top: 0.3em;
+                                font-weight: 700;
+                                font-size: 2.5em;
+                                margin-bottom: 0.2em;
+                            }
+                            p {
+                                color: $color-teal;
+                                text-align: center;
+                                margin: 0 auto;
+                            }
+                            a {
+                                text-decoration: none;
+                            }
+                        }
                     }
-                    .toggle-nav .menu-button {
-                        position: absolute;
-                        left: auto;
-                        top: 1em;
-                        right: 1.5em;
+                    
+                    // INDEX ENTRY MARGIN TOP______________________________
+                    @media (max-width: $breakpoint-small) {
+                        .index_entry_section {
+                            margin-top: 1em;
+                        }
                     }
-                    .toggle-nav .site-nav {
-                        text-align: center;
+                    
+                    // menu icon _____________________
+                    * {
+                        box-sizing: border-box;
                     }
-                    /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
-                    .toggle-nav .site-nav ul {
-                        position: absolute;
-                        left: -9999px;
-                        margin-top: 2.5em;
-                    }
-                    /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
-                    .toggle-nav.expanded .site-nav ul {
-                        position: static;
-                        left: auto;
-                        display: block;
-                    }
-                    .toggle-nav.expanded .site-nav a {
-                        background-color: $color-teal;
-                        color: white;
-                        margin: 0.5em 0;
-                        padding: 1em;
-                        justify-content: space-between;
-                    }
-                    .toggle-nav.expanded .site-nav a:hover {
-                        background-color: $color-white;
+                    
+                    .site-header .container {
+                        padding: 1em 0.5em;
                         color: $color-teal;
                     }
-                    /* ANIMATING THE TOGGLE NAV */
-                    .toggle-nav .site-nav ul {
-                        transition: all 1s ease;
-                        max-height: 0;
+                    
+                    @media (min-width: 768px) {
+                        .site-header {
+                            display: flex;
+                            justify-content: space-between;
+                        }
                     }
-                    .toggle-nav.expanded .site-nav ul {
-                        max-height: 400px;
+                    
+                    .site-header a {
+                        text-decoration: none;
                     }
-                }
-                /* NAVICON */
-                
-                .navicon {
-                    color: rgba(0, 0, 0, 0);
-                    padding: 0;
-                }
-                
-                .navicon::after {
-                    content: "\2630";
-                    color: $color-teal;
-                    display: inline-block;
-                    font-size: 1.5em;
-                    transform: rotate(0deg);
-                }
-                
-                .expanded .navicon::after {
-                    content: "\2715";
-                    transform: rotate(-90deg);
-                    transition: transform 0.4s ease-out;
-                }
-                /* HELPERS */
-                
-                @media (min-width: 768px) {
-                    .hideonlarge {
-                        visibility: hidden;
+                    /* SITE ID (LOGO) */
+                    
+                    .site-id h1 {
+                        font-size: 1.5em;
+                        margin: 0;
+                        text-align: center;
                     }
-                }
+                    
+                    .site-id a {
+                        display: inline-block;
+                        padding: 0.25em 0;
+                    }
+                    /* SITE ID (LOGO) */
+                    
+                    .site-id h1 {
+                        font-size: 1.5em;
+                        margin: 0;
+                        text-align: center;
+                    }
+                    
+                    .site-id a {
+                        display: inline-block;
+                        padding: 0.25em 0;
+                    }
+                    /* SITE NAV (Primary Top Nav) */
+                    
+                    .site-nav {
+                        text-transform: uppercase;
+                        letter-spacing: 0.15em;
+                        font-size: 80%;
+                    }
+                    
+                    .site-nav ul {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin: 0;
+                        padding: 0;
+                        font-family: $headingfont-family;
+                    }
+                    
+                    .site-nav li {
+                        list-style: none;
+                    }
+                    
+                    .site-nav a {
+                        display: block;
+                        padding: 0.5em 1em;
+                    }
+                    /* MENU BUTTON */
+                    
+                    .menu-button {
+                        position: absolute;
+                        left: -9999px;
+                        padding: 0.5em;
+                    }
+                    
+                    .menu-button:hover {
+                        cursor: pointer;
+                    }
+                    
+                    .menu-button::selection {
+                        color: none;
+                        background: none;
+                    }
+                    /* TOGGLE-NAV */
+                    
+                    @media (max-width: 767px) {
+                        .toggle-nav .site-id h1 {
+                            text-align: left;
+                        }
+                        .toggle-nav .menu-button {
+                            position: absolute;
+                            left: auto;
+                            top: 1em;
+                            right: 1.5em;
+                        }
+                        .toggle-nav .site-nav {
+                            text-align: center;
+                        }
+                        /* HIDE NAV ON SMALL SCREENS BY DEFAULT */
+                        .toggle-nav .site-nav ul {
+                            position: absolute;
+                            left: -9999px;
+                            margin-top: 2.5em;
+                        }
+                        /* SHOW NAV ON SMALL SCREENS WHEN EXPANDED CLASS IS TOGGLED */
+                        .toggle-nav.expanded .site-nav ul {
+                            position: static;
+                            left: auto;
+                            display: block;
+                        }
+                        .toggle-nav.expanded .site-nav a {
+                            background-color: $color-teal;
+                            color: white;
+                            margin: 0.5em 0;
+                            padding: 1em;
+                            justify-content: space-between;
+                        }
+                        .toggle-nav.expanded .site-nav a:hover {
+                            background-color: $color-white;
+                            color: $color-teal;
+                        }
+                        /* ANIMATING THE TOGGLE NAV */
+                        .toggle-nav .site-nav ul {
+                            transition: all 1s ease;
+                            max-height: 0;
+                        }
+                        .toggle-nav.expanded .site-nav ul {
+                            max-height: 400px;
+                        }
+                    }
+                    /* NAVICON */
+                    
+                    .navicon {
+                        color: rgba(0, 0, 0, 0);
+                        padding: 0;
+                    }
+                    
+                    .navicon::after {
+                        content: "\2630";
+                        color: $color-teal;
+                        display: inline-block;
+                        font-size: 1.5em;
+                        transform: rotate(0deg);
+                    }
+                    
+                    .expanded .navicon::after {
+                        content: "\2715";
+                        transform: rotate(-90deg);
+                        transition: transform 0.4s ease-out;
+                    }
+                    /* HELPERS */
+                    
+                    @media (min-width: 768px) {
+                        .hideonlarge {
+                            visibility: hidden;
+                        }
+                    }
