@@ -50,7 +50,8 @@ a img:hover {
 .videos a,
 .sci-works-grid a,
 .solar-works-grid a,
-.animation a {
+.animation a,
+.swiper-slide a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

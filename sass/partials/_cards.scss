@@ -65,22 +65,75 @@
 
 // index quote____________
 .quote {
-    margin-bottom: 5em;
     margin-top: 3em;
 }
 
-// index work__________________
+.quote,
+.new_works,
 .case-studies {
     margin-bottom: 5em;
 }
 
+//  new works_______________
+.new_works {
+    background-color: $color-teal;
+    padding-bottom: 3em;
+    padding-top: .5em;
+    .sectionhead {
+        margin-bottom: 2em;
+        h1 {
+            color: $color-yellow;
+        }
+    }
+    .new_works_card {
+        margin: 1em;
+        margin-bottom: 2.5em;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.1s ease-out;
+        background-color: $color-white;
+        overflow: hidden;
+        a {
+            text-decoration: none;
+        }
+        .three-fifths {
+            clip-path: polygon(1 0, 99% 0, 99% 100%, 0 100%);
+            margin: 0;
+            .new-work-image {
+                margin: 0;
+                z-index: 100;
+            }
+        }
+        .line_index {
+            margin-left: 0;
+            z-index: -100;
+        }
+        .work_text_home {
+            margin-left: 0;
+            padding-right: 1em;
+            h2 {
+                margin-left: 2em;
+                font-size: 1.5em;
+            }
+            .work-title,
+            h3 {
+                font-weight: 100;
+                text-align: right;
+                font-size: 1em;
+                margin-left: 2em;
+            }
+        }
+    }
+}
+
+// index work__________________
 .index_card {
     text-decoration: none;
     padding-bottom: 10px;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.1s ease-out;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     .award_b_corner {
         right: 0;
@@ -101,7 +154,7 @@
             font-size: 1.5em;
         }
         .align-right-type {
-            margin-right: 1.5em;
+            // margin-right: 1.5em;
             .work-title,
             h3 {
                 font-weight: 100;
@@ -127,7 +180,8 @@
 }
 
 // index card hover state_______ 
-.index_card:hover {
+.index_card:hover,
+.new_works_card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     .index_card_img {
         transform: scale(1.03);

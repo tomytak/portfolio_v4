@@ -322,7 +322,8 @@
                     .conquest_patterns_desktop,
                     .light_desktop,
                     .access_art_desktop,
-                    .sci_desktop {
+                    .sci_desktop,
+                    .new_works_desktop {
                         visibility: visible;
                         display: none;
                     }
@@ -346,7 +347,8 @@
                     .access_art_mobile,
                     .access_web_mobile,
                     .sci_mobile,
-                    .christmas_mobile {
+                    .christmas_mobile,
+                    .new_works_mobile {
                         display: none;
                     }
                     
@@ -375,7 +377,8 @@
                         .access_art_desktop,
                         .access_web_desktop,
                         .sci_desktop,
-                        .christmas_desktop {
+                        .christmas_desktop,
+                        .new_works_desktop {
                             visibility: hidden;
                             position: absolute;
                         }
@@ -397,7 +400,8 @@
                         .access_art_mobile,
                         .access_web_mobile,
                         .sci_mobile,
-                        .christmas_mobile {
+                        .christmas_mobile,
+                        .new_works_mobile {
                             margin-top: 2em;
                             margin-bottom: 2em;
                             visibility: visible;
