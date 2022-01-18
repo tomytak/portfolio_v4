@@ -7,16 +7,17 @@
     }
     
     // ASTRO WORKS GRID
-    .astro-works-grid {
+    .astro-grid {
+        display: grid;
         margin-top: 4em;
         grid-gap: 1em;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-areas: ". . astro_insta astro_insta astro_fb astro_fb . .";
-        .astro_insta {
-            grid-area: astro_insta;
+        grid-template-areas: ". . a_insta a_insta a_fb a_fb . .";
+        .a_insta {
+            grid-area: a_insta;
         }
-        .astro_fb {
-            grid-area: astro_fb;
+        .a_fb {
+            grid-area: a_fb;
         }
     }
     

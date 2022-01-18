@@ -85,44 +85,52 @@
             color: $color-yellow;
         }
     }
-    .new_works_card {
-        margin: 1em;
-        margin-bottom: 2.5em;
+}
+
+.new_works_card {
+    margin: 1em;
+    margin-bottom: 2.5em;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease-out;
+    background-color: $color-white;
+    overflow: hidden;
+    a {
         text-decoration: none;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: all 0.1s ease-out;
-        background-color: $color-white;
-        overflow: hidden;
-        a {
-            text-decoration: none;
-        }
-        .three-fifths {
-            clip-path: polygon(1 0, 99% 0, 99% 100%, 0 100%);
+    }
+    .three-fifths {
+        clip-path: polygon(1 0, 99% 0, 99% 100%, 0 100%);
+        margin: 0;
+        .new-work-image {
             margin: 0;
-            .new-work-image {
-                margin: 0;
-                z-index: 100;
-            }
+            z-index: 100;
         }
-        .line_index {
-            margin-left: 0;
-            z-index: -100;
+    }
+    .line_index {
+        margin-left: 0;
+        z-index: -100;
+    }
+    .work_text_home {
+        margin-left: 0;
+        padding-right: 1em;
+        h2 {
+            margin-left: 2em;
+            font-size: 1.5em;
         }
-        .work_text_home {
-            margin-left: 0;
-            padding-right: 1em;
-            h2 {
-                margin-left: 2em;
-                font-size: 1.5em;
-            }
-            .work-title,
-            h3 {
-                font-weight: 100;
-                text-align: right;
-                font-size: 1em;
-                margin-left: 2em;
-            }
+        .work-title,
+        h3 {
+            font-weight: 100;
+            text-align: right;
+            font-size: 1em;
+            margin-left: 2em;
         }
+    }
+}
+
+.new_works_mobile {
+    .index_card {
+        margin-top: 0;
+        margin-bottom: 2em;
     }
 }
 
@@ -154,7 +162,6 @@
             font-size: 1.5em;
         }
         .align-right-type {
-            // margin-right: 1.5em;
             .work-title,
             h3 {
                 font-weight: 100;

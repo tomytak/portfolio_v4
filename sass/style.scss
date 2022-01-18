@@ -39,6 +39,8 @@ $sightingsbodyfont-family: "Open Sans",
 sans-serif;
 $mkheaderfont-family: "adrianna",
 sans-serif;
+$accessfont-family: "century-gothic",
+sans-serif;
 // VARIABLES__________________________________
 $color-teal: #005563;
 $color-red: #cc1f3d;
@@ -64,7 +66,7 @@ $color-pele: #FFAA00;
 $color-pele-theme: #E83E03;
 $color-astro-accent: #F6961C;
 $color-sightings: #BFC0BE;
-$color-grandma: rgba(220, 191, 147, 0.879);
+$color-fine-art: rgba(220, 191, 147, 0.879);
 $color-access: #4D9ED7;
 $color-sci:#DDDD;
 $color-christmas:#fdbb20;
@@ -102,4 +104,5 @@ $breakpoint-large: 1250px;
 @import "partials/_mk.scss";
 @import "partials/_access.scss";
 @import "partials/_sci.scss";
-@import "partials/_christmas.scss"
+@import "partials/_christmas.scss";
+@import "partials/_structure_fine-art.scss";

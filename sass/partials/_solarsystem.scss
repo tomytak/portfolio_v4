@@ -3,6 +3,9 @@
 .hero {
     .solar {
         background-color: $color-space;
+        @media (max-width: $breakpoint-small) {
+            margin-top: 1em;
+        }
     }
 }
 

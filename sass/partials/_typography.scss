@@ -354,6 +354,47 @@ section.theme_info {
     }
 }
 
+// Typographic scale access to care______________________
+// ASTRODAY__________________
+.type_specimen {
+    .type_access {
+        h1 {
+            font-family: $accessfont-family;
+            text-transform: none;
+            color: $color-black;
+            font-weight: 700;
+        }
+        h2,
+        h3,
+        p {
+            font-family: $spacebodyfont-family;
+            color: $color-black;
+            font-weight: 400;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0;
+            line-height: 1em;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin-top: 0;
+            letter-spacing: .1em;
+        }
+        p {
+            font-size: 1.25em;
+            font-weight: 300;
+            line-height: 1.5;
+            max-width: 17em;
+        }
+    }
+}
+
 
 /* TYPOGRAPHIC SCALE DINO______________________*/
 
@@ -472,7 +513,7 @@ section.theme_info {
     }
 }
 
-// CONQUEST
+// CONQUEST__________
 .type_conquest {
     h1,
     h2,

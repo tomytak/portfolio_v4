@@ -40,7 +40,6 @@ a img:hover {
 .light_mobile a,
 .wireframe a,
 .grandma_hero a,
-.hands_hero a,
 .hands_grid a,
 .hands_img a,
 .fb a,
@@ -51,7 +50,8 @@ a img:hover {
 .sci-works-grid a,
 .solar-works-grid a,
 .animation a,
-.swiper-slide a {
+.swiper-slide a,
+.fragment_hero a {
     display: block;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

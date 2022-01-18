@@ -1,0 +1,28 @@
+.art_horizontal {
+    .sectionhead {
+        margin-bottom: 2em;
+        h1 {
+            color: $color-yellow;
+        }
+    }
+}
+
+// SUMMARY LAYOUT________________
+.hands,
+.grandma,
+.fragment {
+    background-color: $color-fine-art;
+    margin-bottom: 2em;
+    hr {
+        max-width: 15em;
+        margin-left: 0;
+        border-top: 2px dashed $color-red;
+        margin-bottom: 2em;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+}

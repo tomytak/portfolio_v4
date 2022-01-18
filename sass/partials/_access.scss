@@ -147,3 +147,15 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-small) {
+    #social_media {
+        .videos {
+            .access_video {
+                .two-thirds {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}
