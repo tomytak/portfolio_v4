@@ -22,10 +22,13 @@
     }
     
     @media (max-width: $breakpoint-small) {
-        .astro-works-grid {
+        .astro-grid {
             display: block;
-            .astro_insta {
+            .a_insta,
+            .a_fb {
                 margin-bottom: 1em;
+                width: 60%;
+                margin: 0 auto;
             }
         }
     }

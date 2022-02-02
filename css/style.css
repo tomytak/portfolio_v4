@@ -3046,10 +3046,13 @@ fade-in {
     grid-area: a_fb; }
 
 @media (max-width: 768px) {
-  .astro-works-grid {
+  .astro-grid {
     display: block; }
-    .astro-works-grid .astro_insta {
-      margin-bottom: 1em; } }
+    .astro-grid .a_insta,
+    .astro-grid .a_fb {
+      margin-bottom: 1em;
+      width: 60%;
+      margin: 0 auto; } }
 
 /* HERO */
 .hero .pele {
